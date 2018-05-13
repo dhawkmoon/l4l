@@ -14,25 +14,4 @@
 @import 'theme/common';
 @import 'theme/_header';
 @import 'theme/_s1';
-
-
-section {
-	padding-top: 70px;
-}
-
-.res-pad {
-	padding-left: 0 !important;
-	padding-right: 0 !important
-}
-
-.res-pad-l {
-	padding-left: 0 !important
-}
-
-.res-pad-r {
-	padding-right: 0 !important
-}
-
-.pos-rel {
-	position: relative;
-}
+@import 'theme/_s2';

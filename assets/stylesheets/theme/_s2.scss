@@ -1,0 +1,94 @@
+.s2 {
+	position: relative;
+	height: 615px;
+	background-image: url(../img/s2-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.icons-tabs {
+	&__header {
+		li {
+			display: block;
+			position: relative;
+			float: left;
+			width: 145px;
+			&:not(:last-child) {
+				margin-right: 130px;
+				&>a::after {
+					content: '';
+					display: block;
+					width: 131px;
+					height: 2px;
+					background-image: url(../img/dots-sprite.png);
+					background-size: cover;
+					position: absolute;
+					left: 145px;
+					top: 60px;
+					background-position-x: -230px;
+					opacity: .8;
+					@include trans;
+				}
+			}
+			a {
+				display: block;
+				position: relative;
+				font-size: 20px;
+				color: black;
+				text-decoration: none !important;
+				text-align: center;
+				line-height: 1.2;
+				white-space: nowrap;
+
+				span {
+					display: block;
+					position: relative;
+					width: 120px;
+					height: 120px;
+					margin-left: auto;
+					margin-right: auto;
+					margin-bottom: 25px;
+					border-radius: 50%;
+					background-color: #f3f3f3;
+					color: $brand-primary;
+					@include trans;
+					font-size: 55px;
+					padding-top: 30px;
+					font-weight: 500;
+					@include font-smooth;
+					i {
+						@include font-smooth;
+					}
+					.icon-block {
+						position: relative;
+						left:5px;
+					}
+					&::before {
+						content: '';
+						position: absolute;
+						width: 104px;
+						height: 104px;
+						left: 8px;
+						top: 8px;
+						border: 1px solid white;
+						border-radius: 50%;
+					}
+				}
+				&:hover,
+				&.active {
+				 span{
+					color: white;
+					background-color: $brand-primary;
+					}
+				}
+			}
+		}
+		a.active::after {
+			background-position-x: -140px !important;
+		}
+		a.pre-active::after {
+			background-position-x: -320px !important;
+		}
+
+	}
+}
