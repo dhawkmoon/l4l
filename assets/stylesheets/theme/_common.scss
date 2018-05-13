@@ -1,0 +1,21 @@
+.form-disclaimer {
+	position: relative;
+	font-size: 12px;
+	line-height: 1.2;
+	padding-left: 40px;
+	margin-top: 10px;
+	&::before {
+		content: '\e907';
+		position: absolute;
+		left: 0;
+		font-family: 'icomoon';
+		color: inherit;
+		@include font-smooth;
+		font-size: 31px;
+		top: -3px;
+	}
+}
+
+.color-primary {
+	color $brand-primary !important;
+}

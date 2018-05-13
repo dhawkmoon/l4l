@@ -1,0 +1,8 @@
+.separator {
+	display: block;
+	width: 100vw;
+	border-bottom: 1px solid #ededed;
+	&-primary {
+		border-bottom-color: #9cc94e;
+	}
+}

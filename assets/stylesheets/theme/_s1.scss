@@ -1,0 +1,102 @@
+.s1 {
+	position: relative;
+	padding-top: 50px;
+	height: 730px;
+	background-color: $brand-primary;
+	background-image: url(../img/s1-bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	p,
+	span {
+		color: white;
+	}
+	&-bg-women {
+		position: absolute;
+		display: block;
+		right: -60px;
+    top: 20px;
+		width: 648px;
+		height: 810px;
+		background-image: url(../img/s1-bg-women.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		z-index: 2;
+	}
+	.intro-heading {
+		position: relative;
+		color: white;
+		z-index: 2;
+		@include font-smooth;
+		 *{color: white}
+		 small {
+			 font-size: 69%;
+		 }
+		 &::before {
+			 	content: '';
+		    display: block;
+		    position: absolute;
+		    background-color: #95c31d;
+		    width: calc(100vw + 680px);
+		    height: 120px;
+		    z-index: -1;
+		    top: -15px;
+		    left: -100vw;
+		    border-radius: 60px;
+		 }
+	}
+	.intro-features {
+		padding-left: 65px;
+		margin-top: 70px;
+		.intro-feature {
+			position: relative;
+			color: white;
+			font-size: 20px;
+			margin-bottom: 30px;
+			&::before {
+				position: absolute;
+		    font-family: 'icomoon';
+		    color: white;
+		    font-size: 40px;
+		    left: -62px;
+				top: -15px;
+				@include font-smooth;
+			}
+			&.clock::before {
+				content: '\e901';
+				top:0;
+			}
+			&.document::before {
+				content: '\e903';
+				margin-left: 5px;
+			}
+			&.cash::before {
+				content: '\e900';
+				margin-left: 3px;
+			}
+			&.costume-s::before {
+				content: '\e902';
+				margin-left: 3px;
+			}
+			&.armchair::before {
+				content: '\e905';
+				margin-left: 9px;
+			}
+		}
+	}
+	.separator {
+		position: absolute;
+		left: 0;
+		z-index: 1;
+	}
+	.intro-form {
+		padding-top: 30px;
+		.btn {
+			margin-left: 15px;
+		}
+		.form-disclaimer {
+			display: block;
+		}
+	}
+
+}

@@ -1,0 +1,52 @@
+/***
+		BUTTONS
+					***/
+
+.btn {
+	padding: 11px 30px;
+  border-radius: 50px;
+  font-size: 20px;
+  @include trans;
+  outline: none !important;
+}
+
+.btn-primary {
+	background-color: $brand-primary;
+	&:focus {
+		background-color: $brand-primary;
+	}
+	&[disabled] {
+		background-color: lighten( $brand-primary, 20% ) !important;
+		opacity: 1;
+	}
+	border: none;
+	color: white;
+	min-width: 230px;
+	text-transform: uppercase;
+	&:active,
+	&:hover,
+	&:active:hover
+	{
+		background-color: lighten( $brand-primary, 20%);
+		box-shadow: none;
+		-webkit-box-shadow: none;
+	}
+}
+
+.btn-success {
+	color: white;
+	background-color: $brand-success;
+	&:focus {
+		color: white;
+	}
+	border: none;
+	min-width: 160px;
+	&:active,
+	&:hover,
+	&:active:hover
+  {
+		background-color: lighten( $brand-success, 5% );
+		box-shadow: none;
+		-webkit-box-shadow: none;
+	}
+}

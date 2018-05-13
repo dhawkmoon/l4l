@@ -1,0 +1,73 @@
+header {
+	height: 125px;
+	background-color: $brand-primary;
+	border-bottom: 1px solid #9cc94e;
+	padding-top: 20px;
+	.header-nav {
+		display: inline-block;
+		margin-top: 25px;
+		li {
+			display: inline-block;
+		}
+		a {
+			color: white;
+	    font-size: 20px;
+	    font-weight: 300;
+	    text-decoration: none !important;
+	    display: block;
+	    padding: 5px 25px;
+	    border: 1px solid transparent;
+	    border-radius: 20px;
+			@include trans;
+			&:hover {
+				border-color: #9cc94e;
+			}
+		}
+	}
+	.header-phone {
+		position: relative;
+		display: inline-block;
+		margin-top: 25px;
+		font-size: 22px;
+		border-bottom: 1px solid transparent;
+		color: white;
+		text-decoration: none !important;
+		@include trans;
+		&:hover {
+			border-bottom-color: #9cc94e;
+		}
+		&::before {
+			content: '\e904';
+			position: absolute;
+			left: -35px;
+			font-family: 'icomoon';
+			color: inherit;
+			@include font-smooth;
+		}
+	}
+}
+
+.logo {
+	display: block;
+	position: relative;
+	width: 132px;
+	height: 86px;
+	background-image: url(../img/logo.svg);
+	background-size: cover;
+	text-decoration: none !important;
+	&-w {
+		background-image: url(../img/logo-w.svg);
+		&::after {
+			content: 'Работа в Контакт-центре Line4Life® Смоленск';
+			position: absolute;
+			display: block;
+			width: 200px;
+			left:155px;
+			top: 25px;
+			color: white;
+			font-size: 16px;
+			line-height: 1.2;
+			font-weight: 300;
+		}
+	}
+}

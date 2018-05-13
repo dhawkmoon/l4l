@@ -1,0 +1,11 @@
+@mixin trans( $t: .1s, $f: linear )
+{
+	-webkit-transition: $t $f;
+	transition: $t $f;
+}
+
+@mixin font-smooth
+{
+	 -webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+}
