@@ -1,6 +1,6 @@
 .s2 {
 	position: relative;
-	height: 615px;
+	height: 670px;
 	background-image: url(../img/s2-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -90,5 +90,47 @@
 			background-position-x: -320px !important;
 		}
 
+	}
+}
+
+.icons-tab {
+	display: none;
+	position: relative;
+	height: 170px;
+  background-color: #ecffcc;
+	font-size: 18px;
+	padding: 0 30px;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: 1px solid $brand-primary;
+	line-height: 1.5;
+	&.active {
+		@include valign-mid;
+	}
+	&::before {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 20px;
+		background-color: #ecffcc;
+		border-left: 1px solid $brand-primary;
+		border-top: 1px solid $brand-primary;
+		position: absolute;
+		-webkit-transform: rotate(45deg);
+		        transform: rotate(45deg);
+		top: -11px;
+
+	}
+	&:nth-child(1)::before {
+		left: 55px;
+	}
+	&:nth-child(2)::before {
+		left: 340px;
+	}
+	&:nth-child(3)::before {
+		left: 615px;
+	}
+	&:nth-child(4)::before {
+		left: 890px;
 	}
 }
