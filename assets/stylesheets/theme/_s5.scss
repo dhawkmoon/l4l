@@ -1,0 +1,56 @@
+.s5 {
+	height: 560px;
+	background-color: $brand-primary;
+	background-image: url(../img/s1-bg.png);
+	background-repeat: no-repeat;
+	background-position: 400px 200px;
+	h2 {
+		color: white;
+	}
+	p {
+		font-size: 20px;
+		color: white;
+		padding-left: 65px;
+		margin-top: 40px;
+	}
+	.btn {
+		margin-left: 65px;
+		margin-top: 15px;
+	}
+	.container {
+		position: relative;
+		height: 490px;
+	}
+}
+
+.list-checked {
+	@extend .list-unstyled;
+	color: white;
+	font-size: 20px;
+	li {
+		position: relative;
+		margin-bottom: 25px;
+		padding-left: 65px;
+		&::before {
+			content: '\e90f';
+			font-family: 'icomoon';
+			color: inherit;
+			font-size: 35px;
+			position: absolute;
+			left: 0;
+			top: -11px;
+			@include font-smooth;
+		}
+	}
+}
+
+.s5-bg-women {
+	position: absolute;
+	bottom:0;
+	right:-80px;
+	width: 488px;
+	height: 484px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../img/s5-bg-women.png);
+}

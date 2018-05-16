@@ -50,3 +50,38 @@
 		-webkit-box-shadow: none;
 	}
 }
+
+.btn-secondary {
+	background-color: white;
+	color: black;
+	&:focus {
+		background-color: white;
+		border: none;
+		min-width: 160px;
+	}
+	&:active,
+	&:hover,
+	&:active:hover
+  {
+		color: white;
+		background-color: #9bc84d;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+	}
+}
+
+.btn {
+	.icon-arrow {
+		display: inline-block;
+		font-size: 13px;
+		margin-left: 10px;
+		@include trans;
+	}
+	&:hover {
+		.icon-arrow {
+			color: white;
+			-webkit-transform: translateX(5px);
+			        transform: translateX(5px);
+		}
+	}
+}

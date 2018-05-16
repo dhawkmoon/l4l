@@ -1,0 +1,25 @@
+.s8 {
+	position: relative;
+	height: 670px;
+	background-image: url(../img/s2-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	.icons-tabs__header {
+		ul {
+			text-align: center;
+			li {
+				float: none;
+				display: inline-block;
+			}
+		}
+	}
+	#tab5::before {
+		left: 195px;
+	}
+	#tab6::before {
+		left: 480px;
+	}
+	#tab7::before {
+		left: 760px;
+	}
+}

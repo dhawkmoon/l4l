@@ -15,6 +15,7 @@
 			width: 145px;
 			&:not(:last-child) {
 				margin-right: 130px;
+				&>span::after,
 				&>a::after {
 					content: '';
 					display: block;
@@ -39,8 +40,15 @@
 				text-align: center;
 				line-height: 1.2;
 				white-space: nowrap;
-
-				span {
+				.tab-title {
+					position: relative;
+					display: inline-block;
+					width: 140%;
+					left: 50%;
+					-webkit-transform: translateX(-50%);
+					        transform: translateX(-50%);
+				}
+				.tab-icon {
 					display: block;
 					position: relative;
 					width: 120px;
@@ -76,7 +84,7 @@
 				}
 				&:hover,
 				&.active {
-				 span{
+				 .tab-icon {
 					color: white;
 					background-color: $brand-primary;
 					}
@@ -89,7 +97,11 @@
 		a.pre-active::after {
 			background-position-x: -320px !important;
 		}
-
+		.icon-gib {
+			position: relative;
+			top:-9px;
+			font-size: 28px;
+		}
 	}
 }
 
@@ -121,16 +133,16 @@
 		top: -11px;
 
 	}
-	&:nth-child(1)::before {
+	&#tab1::before {
 		left: 55px;
 	}
-	&:nth-child(2)::before {
+	&#tab2::before {
 		left: 340px;
 	}
-	&:nth-child(3)::before {
+	&#tab3::before {
 		left: 615px;
 	}
-	&:nth-child(4)::before {
+	&#tab4::before {
 		left: 890px;
 	}
 }
