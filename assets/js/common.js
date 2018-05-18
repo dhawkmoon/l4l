@@ -1,4 +1,21 @@
 $(document).ready( function(){
+	/***
+				ANCHORS SCROLL
+										***/
+			$( '.header-nav a' ).on( 'click', function(e){
+				e.preventDefault();
+
+				var target = $(this).attr('href')
+				var to = $( target ).offset().top
+
+				$('html,body').animate({scrollTop: to}, 400)
+
+				//$('.mobile-menu').removeClass('mobile-menu--active')
+				//$('.mobile-menu').trigger('mutation')
+				return false
+
+			} )
+
 	//Features icons tabs
 	$('[data-toggle=tabs]').click(function(e){
 		e.preventDefault();
