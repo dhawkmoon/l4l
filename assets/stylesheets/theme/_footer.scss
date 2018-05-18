@@ -1,0 +1,32 @@
+%brand-back {
+	background-image: url(../img/s1-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 55%;
+	background-position-y: -50px;
+}
+
+.footer {
+	height: 70px;
+	background-color: $brand-primary;
+	font-size: 14px;
+	color: white;
+
+	&__left-col {
+		height: 70px;
+		text-align: left;
+		padding-top: 27px;
+		@extend %brand-back;
+		background-position-x: 10px;
+	}
+	&__right-col {
+		height: 70px;
+		text-align: right;
+		padding-top: 27px;
+		@extend %brand-back;
+		background-position-x: 255px;
+	}
+	a {
+		color: white;
+		font-size: 14px;
+	}
+}

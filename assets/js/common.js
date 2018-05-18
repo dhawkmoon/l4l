@@ -16,4 +16,28 @@ $(document).ready( function(){
 		$(this).addClass('question-item--active')
 	});
 
+	/*
+	 * Sliders
+	 *
+	 * 01 TESTIMONIALS SLIDER
+	 *
+	 */
+	 var TestimonialsSlider = new Swiper( '#testimonials', {
+		 slidesPerView: 2,
+		 navigation: {
+			 nextEl: '.testimonials .swiper-button-next',
+			 prevEl: '.testimonials .swiper-button-prev',
+		 }
+	 } )
+	 /*
+	  * 02 CLIENTS SLIDER
+		*/
+		var TestimonialsSlider = new Swiper( '#clients', {
+			slidesPerView: 5,
+			//spaceBetween: 35,
+			navigation: {
+				nextEl: '.clients .swiper-button-next',
+				prevEl: '.clients .swiper-button-prev',
+			}
+		} )
 });

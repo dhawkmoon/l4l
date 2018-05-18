@@ -1,7 +1,12 @@
+body {
+	overflow-x: hidden;
+}
+
 section {
 	padding-top: 70px;
 	h2 {
 		margin-bottom: 50px;
+		@include font-smooth;
 	}
 }
 
@@ -42,4 +47,67 @@ section {
 
 .color-primary {
 	color: $brand-primary !important;
+}
+
+.swiper-button {
+	&-next,
+	&-prev {
+		top: 0;
+		margin-top: 0;
+		display: block;
+		width: 80px;
+		height: 130px;
+		background-image: none !important;
+		@include trans;
+		&:hover {
+			background-color: #fafafa;
+		}
+		&::before {
+			content: '\e906';
+			font-family: 'icomoon';
+			font-size: 37px;
+			color: $brand-success;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			height: 52px;
+			width: 42px;
+		}
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			height: 130px;
+			width: 100vw;
+			top: 0;
+			@include trans;
+			background-color: transparent;
+			z-index: -1;
+		}
+		&:hover::after {
+			background-color: #fafafa;
+		}
+	}
+	&-next {
+		right: -50px;
+	}
+	&-prev {
+		left: -95px;
+	}
+	&-next::before {
+		right:0;
+
+	}
+	&-prev::before {
+		left: 0;
+		-webkit-transform: rotate(180deg);
+		        transform: rotate(180deg);
+	}
+	&-next::after {
+		right: -100vw;
+	}
+	&-prev::after {
+		left: -100vw;
+	}
 }

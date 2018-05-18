@@ -1,0 +1,53 @@
+.s6 {
+	padding-bottom: 70px;
+}
+.testimonials {
+	position: relative;
+	&-item {
+		text-align: left;
+		&__title {
+			display: block;
+			padding-top: 15px;
+			font-size: 20px;
+			color: $brand-success;
+		}
+		&__subtitle {
+			display: block;
+			font-size: 18px;
+		}
+		&__info {
+			display: block;
+			font-size: 14px;
+			font-weight: 300;
+			padding-top: 15px;
+		}
+		&__image {
+			position: relative;
+			display: block;
+			float: left;
+			width: 130px;
+			height: 130px;
+			background-size: cover;
+			background-position: center;
+			border-radius: 50%;
+			margin-right: 15px;
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 114px;
+				height: 114px;
+				left: 8px;
+				top: 8px;
+				border: 1px solid white;
+				border-radius: 50%;
+			}
+		}
+		&__body {
+			padding-top: 15px;
+			padding-right: 15px;
+			padding-bottom: 15px;
+			clear: both;
+		}
+	}
+}

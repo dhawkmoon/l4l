@@ -1,0 +1,48 @@
+.map-holder	{
+	height: 510px;
+	position: relative;
+	background-color: silver;
+	.address-block {
+		width: 360px;
+		position: absolute;
+		padding-top: 15px;
+		top: 175px;
+		z-index: 2;
+		left: calc( (100vw - 1140px) / 2 );
+		height: 160px;
+		background-color: rgba(255,255,255,.8);
+		li {
+			position: relative;
+			display: block;
+			font-size: 20px;
+			padding-left: 70px;
+			margin: 25px 0;
+			&::before {
+				display: block;
+				position: absolute;
+				top: -5px;
+				left: 0;
+				color: white;
+				font-family: 'icomoon';
+				font-size: 25px;
+				line-height: 40px;
+				width: 50px;
+				height: 40px;
+				border-radius: 0 3px 3px 0;
+				background-color: $brand-primary;
+				text-align: center;
+				@include font-smooth;
+			}
+			&.place:before {
+				content: '\e90e';
+			}
+			&.phone::before {
+				content: '\e904';
+			}
+			a {
+				color: black !important;
+				@include link-border;
+			}
+		}
+	}
+}

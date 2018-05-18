@@ -9,3 +9,13 @@
 	 -webkit-font-smoothing: antialiased;
 	 -moz-osx-font-smoothing: grayscale;
 }
+
+@mixin link-border( $color: #9cc94e )
+{
+	border-bottom: 1px solid transparent;
+	text-decoration: none !important;
+	@include trans;
+	&:hover {
+		border-bottom-color: $color;
+	}
+}
