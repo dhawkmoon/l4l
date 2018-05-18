@@ -10,6 +10,17 @@ $(document).ready( function(){
 		return false;
 	})
 
+	//Heading tabs
+	$('.h-tabs-toggler').click(function(e){
+		e.preventDefault();
+		$(this).parents('h2').find('.h-tabs-toggler').removeClass('active');
+		$(this).addClass('active');
+		var target = $(this).data('target');
+		$( target ).parents('.h-tabs-body').find('.h-tab__panel').removeClass('active');
+		$( target ).addClass('active')
+		return false;
+	})
+
 	//Questions accordeon
 	$('.question-item').click(function(e){
 		$('.question-item').removeClass('question-item--active')

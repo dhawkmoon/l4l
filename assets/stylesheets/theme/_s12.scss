@@ -1,0 +1,41 @@
+.s12 {
+	height: 660px;
+	padding-bottom: 70px;
+	background-image: url( ../img/s2-bg.jpg );
+	background-repeat: no-repeat;
+	background-size: cover;
+	.logo {
+		opacity: .6;
+		margin-top: 50px;
+	}
+	h2 {
+		opacity: .8;
+	}
+	input,
+	.btn {
+		width: 360px;
+		margin: 0 auto;
+		display: block;
+	}
+	input[type="text"] {
+		border: 1px solid silver !important;
+		margin-bottom: 15px;
+	}
+	.form-disclaimer {
+		width: 400px;
+		margin: 0 auto;
+		display: block;
+		&::before {
+			color: $brand-primary;
+		}
+	}
+}
+
+.text {
+	&-xxl {
+		font-size: 72px;
+	}
+	&-xl {
+		font-size: 36px;
+	}
+}

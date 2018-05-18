@@ -6145,7 +6145,7 @@ header {
       -moz-osx-font-smoothing: grayscale; }
 
 .logo {
-  display: block;
+  display: inline-block;
   position: relative;
   width: 132px;
   height: 86px;
@@ -6165,6 +6165,9 @@ header {
       font-size: 16px;
       line-height: 1.2;
       font-weight: 300; }
+  .logo-xl {
+    width: 199px;
+    height: 130px; }
 
 .s1 {
   position: relative;
@@ -6459,6 +6462,10 @@ header {
     text-align: left;
     display: block;
     font-size: 18px; }
+  .h-tab__panel {
+    display: none; }
+    .h-tab__panel.active {
+      display: block; }
 
 .s4 {
   padding-bottom: 70px; }
@@ -6578,6 +6585,10 @@ header {
 
 .question-item--active .question-item__body {
   display: block; }
+  .question-item--active .question-item__body .btn {
+    display: block;
+    max-width: 340px;
+    margin: 0 auto; }
 
 .s5 {
   height: 560px;
@@ -6804,6 +6815,38 @@ header {
         transition: 0.1s linear; }
         .map-holder .address-block li a:hover {
           border-bottom-color: #9cc94e; }
+
+.s12 {
+  height: 660px;
+  padding-bottom: 70px;
+  background-image: url(../img/s2-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .s12 .logo {
+    opacity: .6;
+    margin-top: 50px; }
+  .s12 h2 {
+    opacity: .8; }
+  .s12 input,
+  .s12 .btn {
+    width: 360px;
+    margin: 0 auto;
+    display: block; }
+  .s12 input[type="text"] {
+    border: 1px solid silver !important;
+    margin-bottom: 15px; }
+  .s12 .form-disclaimer {
+    width: 400px;
+    margin: 0 auto;
+    display: block; }
+    .s12 .form-disclaimer::before {
+      color: #71b102; }
+
+.text-xxl {
+  font-size: 72px; }
+
+.text-xl {
+  font-size: 36px; }
 
 .footer__left-col, .footer__right-col {
   background-image: url(../img/s1-bg.jpg);

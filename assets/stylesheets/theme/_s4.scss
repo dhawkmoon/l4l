@@ -131,6 +131,11 @@
 		}
 		.question-item__body {
 			display: block;
+			.btn {
+				display: block;
+				max-width: 340px;
+				margin: 0 auto;
+			}
 		}
 	}
 }

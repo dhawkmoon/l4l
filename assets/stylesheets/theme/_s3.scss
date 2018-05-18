@@ -83,4 +83,11 @@
 		display: block;
 		font-size: 18px;
 	}
+	&__panel {
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
+
 }

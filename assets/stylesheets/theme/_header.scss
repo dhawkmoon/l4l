@@ -44,7 +44,7 @@ header {
 }
 
 .logo {
-	display: block;
+	display: inline-block;
 	position: relative;
 	width: 132px;
 	height: 86px;
@@ -65,5 +65,9 @@ header {
 			line-height: 1.2;
 			font-weight: 300;
 		}
+	}
+	&-xl {
+		width: 199px;
+		height: 130px;
 	}
 }
