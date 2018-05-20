@@ -16,10 +16,17 @@
 	<header id="header">
 		<div class="container">
 			<div class="row">
+				<div class="col-xs-4 visible-xs">
+					<span class="mobile-menu-toggler">
+						<span class="mobile-menu-toggler__bar"></span>
+						<span class="mobile-menu-toggler__bar"></span>
+						<span class="mobile-menu-toggler__bar"></span>
+					</span>
+				</div>
 				<div class="col-xs-4">
 					<a href="/" class="logo logo-w"></a>
 				</div>
-				<div class="col-xs-6 res-pad-l">
+				<div class="col-xs-6 res-pad-l hidden-xs">
 					<!-- START: HEADER NAV -->
 					<nav class="header-nav">
 					 	<ul class="list-unstyled">
@@ -39,7 +46,7 @@
 					 </nav>
 					 <!-- END: HEADER NAV -->
 				</div>
-				<div class="col-xs-2 text-right">
+				<div class="col-xs-4 col-md-4 text-right">
 					<a class="header-phone" href="+84812268323">(4812) 26-83-23</a>
 				</div>
 			</div>
@@ -50,7 +57,7 @@
 	<section class="s1" id="s1">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-7">
+				<div class="col-sm-9 col-lg-7">
 					<!-- START: INTRO-HEADING -->
 					<h2 class="intro-heading">
 						<small>Наши <strong>линии в Смоленске</strong> разрываются!</small><br />
@@ -59,7 +66,7 @@
 					<!-- END: INTRO-HEADING -->
 					<!-- SATRT INTRO-FEATURES -->
 					<ul class="list-unstyled intro-features">
-						<li class="intro-feature clock">Свободный график: вечернее время, 2/2 или 5/2,<br />
+						<li class="intro-feature clock">Свободный график: вечернее время,<br class="visible-xs" /> 2/2 или 5/2,<br class="hidden-xs" />
 выходные, можно работать из дома</li>
 						<li class="intro-feature document">Оформление в соответствии с ТК РФ</li>
 						<li class="intro-feature cash">Достойное вознаграждение</li>
@@ -69,7 +76,7 @@
 					<!-- END: INTRO-FEATURES -->
 
 				</div>
-				<div class="col-xs-5 pos-rel">
+				<div class="hidden-xs col-sm-3 col-lg-5 pos-rel">
 					<div class="s1-bg-women"></div>
 				</div>
 			</div>
@@ -77,7 +84,7 @@
 		<div class="separator separator-primary"></div>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-7 intro-form">
+				<div class="col-xs-12 col-sm-7 intro-form">
 					<p>Просто оставьте свой номер и мы Вам перезвоним</p>
 					<!-- START: INTRO FORM -->
 					<form action="/" class="s1-form form-inline" id="s1-form">
@@ -96,7 +103,7 @@
 							</button>
 						</div>
 						<span class="form-disclaimer">
-							Внимание! Нажимая «Получить работу» Вы подтверждаете свое согласие<br />
+							Внимание! Нажимая «Получить работу» Вы подтверждаете свое согласие<br class="hidden-xs" />
 на использование Ваших персональных данных
 						</span>
 					</form>
@@ -115,7 +122,7 @@
 			<div class="row">
 				<div class="col-xs-12 text-center">
 					<h2>
-						Почему <strong class="color-primary">круто</strong> работать <strong class="color-primary">с нами</strong>?
+						Почему <strong class="color-primary">круто</strong><br class="visible-xs" /> работать <strong class="color-primary">с нами</strong>?
 					</h2>
 				</div>
 			</div>
@@ -124,9 +131,9 @@
 			<div class="row">
 				<div class="col-xs-10 col-xs-offset-1 res-pad">
 					<div class="icons-tabs">
-						<nav class="icons-tabs__header row">
-							<ul class="list-unstyled col-xs-12">
-								<li>
+						<nav id="features" class="icons-tabs__header row">
+							<ul class="list-unstyled col-xs-12 features-wrapper">
+								<li class="features-slide">
 									<a href="#tab1" class="active" data-toggle="tabs">
 										<span class="tab-icon">
 											<i class="icon-time"></i>
@@ -135,34 +142,53 @@
 											Мы ценим<br /> Ваше время
 										</span>
 									</a>
+									<div class="icons-tab visible-xs">
+										<p>Мы, как никто другой понимаем, что время сродни деньгам. Дипломная работа, родные и близкие, уход за детьми – мы разделяем с Вами ваши ценности, поэтому мы предлагаем Вам именно тот рабочий график, который УСТРАИВАЕТ Вас! Разнообразные рабочие графики: от 4 часов в день до сменного графика 2/2, возможность работы по вечерам, выходным.</p>
+									</div>
 								</li>
-								<li><a href="#tab2" data-toggle="tabs">
-									<span class="tab-icon">
-										<i class="icon-block"></i>
-									</span>
-									<span class="tab-title">
-										Мы уважаем<br /> Ваши права
-									</span>
-								</a></li>
-								<li><a href="#tab3" data-toggle="tabs">
-									<span class="tab-icon">
-										<i class="icon-costume"></i>
-									</span>
-									<span class="tab-title">
-										Нам интересны<br /> Ваши вкусы
-									</span>
-								</a></li>
-								<li><a href="#tab4" data-toggle="tabs">
-									<span class="tab-icon">
-										<i class="icon-warm"></i>
-									</span>
-									<span class="tab-title">
-										У нас уютно<br /> ;)
-									</span>
-								</a></li>
+								<li class="features-slide">
+									<a href="#tab2" data-toggle="tabs">
+										<span class="tab-icon">
+											<i class="icon-block"></i>
+										</span>
+										<span class="tab-title">
+											Мы уважаем<br /> Ваши права
+										</span>
+									</a>
+									<div class="icons-tab visible-xs">
+										<p>Мы все проживаем и работаем на территории одной страны, и мы уважаем Ваше право на защиту труда. Работа в праздники? Серая зарплата? Нет, такого здесь Вы ТОЧНО не найдете! Оформление по ТК РФ, выплаты два раза в месяц (аванс/зп).</p>
+									</div>
+								</li>
+								<li class="features-slide">
+									<a href="#tab3" data-toggle="tabs">
+										<span class="tab-icon">
+											<i class="icon-costume"></i>
+										</span>
+										<span class="tab-title">
+											Нам интересны<br /> Ваши вкусы
+										</span>
+									</a>
+
+									<div class="icons-tab visible-xs">
+										<p>Не любите тесные рубашки и скучные костюмы? Вы в положении и не можете носить строгие юбки? Вам просто нравится выглядеть не как все? Мы поддерживаем Вас!</p>
+									</div>
+								</li>
+								<li class="features-slide">
+									<a href="#tab4" data-toggle="tabs">
+										<span class="tab-icon">
+											<i class="icon-warm"></i>
+										</span>
+										<span class="tab-title">
+											У нас уютно<br /> ;)
+										</span>
+									</a>
+									<div class="icons-tab visible-xs">
+										<p>Если слово офис ассоциируется у Вас с серыми стенами и плотными перегородками, забудьте! Дизайн в нашем офисе выполнен в стиле лофт, есть удобная лаундж зона, мини-кухня, игровая приставка и даже гамак!</p>
+									</div>
+								</li>
 							</ul>
 						</nav>
-						<div class="icons-tabs__body">
+						<div class="icons-tabs__body hidden-xs">
 							<!-- START: TAB 1 -->
 							<div id="tab1" class="icons-tab active">
 								<p>Мы, как никто другой понимаем, что время сродни деньгам. Дипломная работа, родные и близкие, уход за детьми – мы разделяем с Вами ваши ценности, поэтому мы предлагаем Вам именно тот рабочий график, который УСТРАИВАЕТ Вас! Разнообразные рабочие графики: от 4 часов в день до сменного графика 2/2, возможность работы по вечерам, выходным.</p>

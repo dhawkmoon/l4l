@@ -53,4 +53,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url(../img/s5-bg-women.png);
+	@media all and (max-width: 1200px) {
+		right: -165px;	
+	}
 }

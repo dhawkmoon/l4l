@@ -8,6 +8,13 @@ section {
 		margin-bottom: 50px;
 		@include font-smooth;
 	}
+	@media all and (max-width: 768px) {
+		padding-top: 30px;
+		h2 {
+			margin-bottom: 30px;
+		}
+	}
+
 }
 
 .res-pad {
@@ -91,9 +98,15 @@ section {
 	}
 	&-next {
 		right: -50px;
+		@media all and (max-width: 1200px) {
+			right: -100px;
+		}
 	}
 	&-prev {
 		left: -95px;
+		@media all and (max-width: 1200px) {
+			left: -130px;
+		}
 	}
 	&-next::before {
 		right:0;

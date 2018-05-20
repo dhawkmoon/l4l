@@ -13,8 +13,18 @@
 			position: relative;
 			float: left;
 			width: 145px;
+			@media all and (max-width: 768px) {
+				width: 100%;
+				text-align: center;
+			}
 			&:not(:last-child) {
 				margin-right: 130px;
+				@media all and (max-width: 1200px) {
+					margin-right: 75px;
+				}
+				@media all and (max-width: 768px) {
+					margin-right: 0;
+				}
 				&>span::after,
 				&>a::after {
 					content: '';
@@ -29,8 +39,15 @@
 					background-position-x: -230px;
 					opacity: .8;
 					@include trans;
+					@media all and (max-width: 1200px) {
+						width: 60px;
+					}
+					@media all and (max-width: 768px) {
+						display: none;
+					}
 				}
 			}
+
 			a {
 				display: block;
 				position: relative;
@@ -47,6 +64,15 @@
 					left: 50%;
 					-webkit-transform: translateX(-50%);
 					        transform: translateX(-50%);
+					@media all and (max-width: 768px) {
+						width: 100px;
+						left: 0;
+						text-align: left;
+						margin-left: 15px;
+						-webkit-transform: none;
+						        transform: none;
+
+					}
 				}
 				.tab-icon {
 					display: block;
@@ -81,6 +107,9 @@
 						border: 1px solid white;
 						border-radius: 50%;
 					}
+					@media all and (max-width: 768px) {
+						display: inline-block;
+					}
 				}
 				&:hover,
 				&.active {
@@ -88,6 +117,13 @@
 					color: white;
 					background-color: $brand-primary;
 					}
+				}
+				@media all and (max-width: 768px) {
+
+					.tab-icon {
+					 color: white;
+					 background-color: $brand-primary;
+					 }
 				}
 			}
 		}
@@ -135,14 +171,46 @@
 	}
 	&#tab1::before {
 		left: 55px;
+		@media all and (max-width: 1200px) {
+			left: 60px;
+		}
 	}
 	&#tab2::before {
 		left: 340px;
+		@media all and (max-width: 1200px) {
+			left: 283px;
+		}
 	}
 	&#tab3::before {
 		left: 615px;
+		@media all and (max-width: 1200px) {
+			left: 506px;
+		}
 	}
 	&#tab4::before {
 		left: 890px;
+		@media all and (max-width: 1200px) {
+			left: 725px;
+		}
+	}
+	@media all and (max-width: 768px) {
+		height: 275px;
+		font-size: 16px;
+		text-align: left;
+		padding: 15px;
+		margin-top: 0;
+		&::before {
+			display: none;
+		}
+	}
+}
+//features slider for mobiles
+@media all and (max-width: 768px) {
+	#features {
+		overflow: hidden;
+	}
+	.features-wrapper {
+		padding: 0;
+		width: calc( 100vw * 4 );
 	}
 }

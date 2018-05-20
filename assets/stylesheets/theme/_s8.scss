@@ -15,11 +15,20 @@
 	}
 	#tab5::before {
 		left: 195px;
+		@media all and (max-width: 1200px) {
+			left: 167px;
+		}
 	}
 	#tab6::before {
 		left: 480px;
+		@media all and (max-width: 1200px) {
+			left: 394px;
+		}
 	}
 	#tab7::before {
 		left: 760px;
+		@media all and (max-width: 1200px) {
+			left: 622px;
+		}
 	}
 }

@@ -22,12 +22,18 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		z-index: 2;
+		@media all and (max-width: 1200px) {
+			right: -230px;
+		}
 	}
 	.intro-heading {
 		position: relative;
 		color: white;
 		z-index: 2;
 		@include font-smooth;
+		@media all and (max-width: 768px) {
+			text-align: center;
+		}
 		 *{color: white}
 		 small {
 			 font-size: 69%;
@@ -43,16 +49,26 @@
 		    top: -15px;
 		    left: -100vw;
 		    border-radius: 60px;
+				@media all and (max-width: 768px) {
+					top: -12px;
+				}
 		 }
 	}
 	.intro-features {
 		padding-left: 65px;
 		margin-top: 70px;
+		@media all and (max-width: 768px) {
+			margin-top: 40px;
+			padding-bottom: 5px;
+		}
 		.intro-feature {
 			position: relative;
 			color: white;
 			font-size: 20px;
 			margin-bottom: 30px;
+			@media all and (max-width: 768px) {
+				font-size: 16px;
+			}
 			&::before {
 				position: absolute;
 		    font-family: 'icomoon';
@@ -97,6 +113,37 @@
 		.form-disclaimer {
 			display: block;
 		}
-	}
+		@media all and (max-width: 768px) {
+			text-align: center;
+			.form-control,
+			.btn {
+				width: 260px;
+				display: inline-block;
+				margin-left: 0;
+			}
+			.form-control {
+				margin-bottom: 20px;
+			}
+			.form-disclaimer {
+				display: inline-block;
+		    width: 350px;
+		    text-align: left;
+				margin-top: 0;
+			}
+			p {
+				font-size: 14px;
+			}
 
+		}
+	}
+	@media all and (max-width: 768px) {
+		padding-top: 25px;
+		height: auto;
+		padding-bottom: 25px;
+		background-size: 450px;
+    background-position: center 245px;
+		h2 {
+			font-size: 28px;
+		}
+	}
 }

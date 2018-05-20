@@ -77,11 +77,18 @@
 		font-weight: 500;
 		font-size: 24px;
 		@include font-smooth;
+		@media all and (max-width: 1200px) {
+			font-size: 22px;
+			white-space: nowrap;
+		}
 	}
 	&__body {
 		text-align: left;
 		display: block;
 		font-size: 18px;
+		@media all and (max-width: 1200px) {
+			font-size: 16px;
+		}
 	}
 	&__panel {
 		display: none;

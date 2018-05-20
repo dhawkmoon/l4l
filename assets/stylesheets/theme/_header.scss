@@ -3,6 +3,9 @@ header {
 	background-color: $brand-primary;
 	border-bottom: 1px solid #9cc94e;
 	padding-top: 20px;
+	@media all and (max-width: 768px) {
+		height: 103px;
+	}
 	.header-nav {
 		display: inline-block;
 		margin-top: 25px;
@@ -22,7 +25,11 @@ header {
 			&:hover {
 				border-color: #9cc94e;
 			}
+			@media all and (max-width: 1200px) {
+				font-size: 16px;
+			}
 		}
+
 	}
 	.header-phone {
 		position: relative;
@@ -39,6 +46,20 @@ header {
 			font-family: 'icomoon';
 			color: inherit;
 			@include font-smooth;
+			@media all and (max-width: 1200px) {
+				left: -25px;
+			}
+			@media all and (max-width: 768px) {
+				display: none;
+			}
+		}
+		@media all and (max-width: 1200px) {
+			margin-top: 30px;
+			font-size: 18px;
+		}
+		@media all and (max-width: 768px) {
+			margin-top: 22px;
+			font-size: 14px;
 		}
 	}
 }
@@ -64,6 +85,17 @@ header {
 			font-size: 16px;
 			line-height: 1.2;
 			font-weight: 300;
+			@media all and (max-width: 1200px) {
+				font-size: 12px;
+				width: 150px;
+			}
+			@media all and (max-width: 768px) {
+				display: none;
+			}
+		}
+		@media all and (max-width: 768px) {
+			width: 100px;
+			height: 65px;
 		}
 	}
 	&-xl {

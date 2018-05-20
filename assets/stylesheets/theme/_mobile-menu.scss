@@ -1,0 +1,14 @@
+.mobile-menu {
+
+	&-toggler {
+		display: block;
+		margin-top: 20px;
+		&__bar {
+			display: block;
+			width: 40px;
+			border-top: 1px solid white;
+			margin-bottom: 11px;
+		}
+	}
+
+}

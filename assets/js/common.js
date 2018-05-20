@@ -95,4 +95,17 @@ $(document).ready( function(){
 				prevEl: '.clients .swiper-button-prev',
 			}
 		} )
+		/*
+ 	  * 03 FEATURES SLIDER (ONLY MOBILE)
+ 		*/
+		if( $(window).width() <= 768 ) {
+	 		var FeaturesSlider = new Swiper( '#features', {
+	 			slidesPerView: 1,
+	 			//spaceBetween: 35,
+
+				wrapperClass: 'features-wrapper',
+				slideClass: 'features-slide',
+
+	 		} )
+		}
 });
