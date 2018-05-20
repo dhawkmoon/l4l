@@ -30,3 +30,25 @@
 		font-size: 14px;
 	}
 }
+
+.arrow-top {
+	display: block;
+	position: fixed;
+  bottom: 13px;
+	right: 22px;
+	width: 45px;
+	height: 45px;
+	border-radius: 4px;
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-image: url(../img/chevron-green.png);
+	background-color: #eaf3d9;
+	background-position: center;
+	cursor: pointer;
+	@include trans;
+	&:hover {
+		background-color: #9bc84d;
+		background-image: url(../img/chevron.png);
+	}
+
+}

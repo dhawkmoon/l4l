@@ -1,7 +1,10 @@
 $(document).ready( function(){
-	/***
-				ANCHORS SCROLL
-										***/
+	/*
+	 * Scrolls
+	 *
+	 * 01 Anchor Scrolls
+	 *
+	 */
 			$( '.header-nav a' ).on( 'click', function(e){
 				e.preventDefault();
 
@@ -15,6 +18,30 @@ $(document).ready( function(){
 				return false
 
 			} )
+
+	/*
+	 *
+	 * 02 Arrow-top scroll
+	 *
+	 */
+
+	 $('#arrow-top').click( function(){
+		 $('html,body').animate({scrollTop: 0}, 400)
+	 } )
+
+	 $(window).scroll( function(){
+		 window.requestAnimationFrame( function(){
+
+			 if( $(document).scrollTop() > 0 &&  !$('#arrow-top').hasClass('active') )  {
+				 $('#arrow-top').fadeIn(200)
+				 $('#arrow-top').addClass('active')
+			 }
+			 else if( $(document).scrollTop() == 0 ) {
+				 $('#arrow-top').fadeOut(200);
+				 $('#arrow-top').removeClass('active')
+			 }
+		 } );
+	 } )
 
 	//Features icons tabs
 	$('[data-toggle=tabs]').click(function(e){
