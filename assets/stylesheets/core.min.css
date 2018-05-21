@@ -7104,14 +7104,10 @@ header {
           border-bottom-color: #9cc94e; }
 
 .s12 {
-  height: 660px;
   padding-bottom: 70px;
   background-image: url(../img/s2-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
-  @media all and (max-width: 768px) {
-    .s12 {
-      height: auto; } }
   .s12 .logo {
     opacity: .6;
     margin-top: 50px; }

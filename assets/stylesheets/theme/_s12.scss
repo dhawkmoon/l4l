@@ -1,12 +1,8 @@
 .s12 {
-	height: 660px;
 	padding-bottom: 70px;
 	background-image: url( ../img/s2-bg.jpg );
 	background-repeat: no-repeat;
 	background-size: cover;
-	@media all and (max-width: 768px) {
-		height: auto;
-	}
 	.logo {
 		opacity: .6;
 		margin-top: 50px;
