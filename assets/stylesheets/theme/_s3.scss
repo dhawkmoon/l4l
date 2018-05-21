@@ -1,5 +1,12 @@
 .s3 {
 	height: 610px;
+	@media all and (max-width:768px) {
+		height: auto;
+		.swiper-pagination {
+			margin-bottom: -8px;
+		}
+		padding-bottom: 20px;
+	}
 }
 
 .h-tabs {
@@ -13,6 +20,10 @@
 			span {
 				color: black;
 			}
+		}
+		@media all and (max-width: 768px) {
+			display: block;
+			margin-right: 0;
 		}
 	}
 }
@@ -96,5 +107,12 @@
 			display: block;
 		}
 	}
-
+	@media all and (max-width:768px) {
+		width: 100%;
+		float: left;
+		margin-right: 0;
+		&-wrapper {
+			width: calc( 500vw );
+		}
+	}
 }

@@ -51,6 +51,15 @@
 				border-right-color: #9bc84d;
 			}
 		}
+		@media all and (max-width: 768px) {
+			padding: 15px 65px 15px 30px;
+			height: 80px;
+			font-size: 16px;
+			@include valign-mid;
+			&::after {
+				top: 32px;
+			}
+		}
 	}
 	&__body {
 		display: none;
@@ -72,6 +81,11 @@
 	    border-right-color: transparent;
 	    border-top-color: transparent;
 		}
+		@media all and (max-width:768px) {
+			width: 80%;
+		  margin-left: 0;
+		  font-size: 16px;
+		}
 	}
 	&__circle {
 		top: 0;
@@ -85,6 +99,9 @@
 		text-align: center;
 		font-size: 32px;
 		line-height: 60px;
+		@media all and (max-width: 768px) {
+			top: 20px;
+		}
 		&--muted {
 			background-color: #e5e5e5;
 			left: auto;
@@ -135,6 +152,9 @@
 				display: block;
 				max-width: 340px;
 				margin: 0 auto;
+				@media all and (max-width: 768px) {
+					font-size: 14px;
+				}
 			}
 		}
 	}

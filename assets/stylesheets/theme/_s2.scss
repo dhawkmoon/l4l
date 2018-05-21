@@ -213,4 +213,20 @@
 		padding: 0;
 		width: calc( 100vw * 4 );
 	}
+	.swiper-pagination {
+		width: 100%;
+		text-align: center;
+		&-bullet {
+			width: 10px;
+			height: 10px;
+			margin-right: 10px;
+			border: 1px solid #bbd986;
+			background-color: transparent;
+			opacity: 1 !important;
+			&-active {
+				border-color: $brand-primary;
+				background-color: $brand-primary;
+			}
+		}
+	}
 }

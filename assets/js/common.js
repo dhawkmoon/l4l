@@ -82,30 +82,119 @@ $(document).ready( function(){
 		 navigation: {
 			 nextEl: '.testimonials .swiper-button-next',
 			 prevEl: '.testimonials .swiper-button-prev',
+		 },
+		 breakpoints: {
+			 768: {
+				 slidesPerView: 1,
+				 pagination: {
+					 el: '#testimonials + .swiper-pagination',
+					 clickable: true,
+				 }
+			 }
 		 }
 	 } )
 	 /*
 	  * 02 CLIENTS SLIDER
 		*/
-		var TestimonialsSlider = new Swiper( '#clients', {
+		var ClientsSlider = new Swiper( '#clients', {
 			slidesPerView: 5,
 			//spaceBetween: 35,
 			navigation: {
 				nextEl: '.clients .swiper-button-next',
 				prevEl: '.clients .swiper-button-prev',
+			},
+			breakpoints: {
+				768: {
+					slidesPerView:3,
+				}
 			}
+
 		} )
 		/*
- 	  * 03 FEATURES SLIDER (ONLY MOBILE)
- 		*/
+ 	   * 03 FEATURES SLIDER (ONLY MOBILE)
+ 		 */
 		if( $(window).width() <= 768 ) {
 	 		var FeaturesSlider = new Swiper( '#features', {
 	 			slidesPerView: 1,
-	 			//spaceBetween: 35,
+	 			spaceBetween: 5,
 
 				wrapperClass: 'features-wrapper',
 				slideClass: 'features-slide',
+				pagination: {
+					el: '#features+.swiper-pagination',
+					clickable: true,
+				},
 
 	 		} )
 		}
+		/*
+		 * 04 TABS WITH REQUIRMENTS
+		 */
+		 if( $(window).width() <= 768 ) {
+ 	 		var hTab1Slider = new Swiper( '#htab1', {
+ 	 			slidesPerView: 1,
+ 	 			spaceBetween: 105,
+
+ 				wrapperClass: 'h-tab-wrapper',
+ 				slideClass: 'h-tab',
+ 				pagination: {
+ 					el: '#htab1 .swiper-pagination',
+ 					clickable: true,
+ 				},
+				observeParents: true,
+
+ 	 		} )
+ 		}
+		/*
+		 * 05 TABS WITH REQUIRMENTS 2
+		 */
+		 if( $(window).width() <= 768 ) {
+	 	 	var hTab2Slider = new Swiper( '#htab2', {
+	 	 			slidesPerView: 1,
+	 	 			spaceBetween: 105,
+
+	 				wrapperClass: 'h-tab-wrapper',
+	 				slideClass: 'h-tab',
+	 				pagination: {
+	 					el: '#htab2 .swiper-pagination',
+	 					clickable: true,
+	 				},
+					observeParents: true,
+					observer: true,
+		 	 	} )
+	 		}
+			/*
+	 	   * 06 FEATURES 2 SLIDER (ONLY MOBILE)
+	 		 */
+			if( $(window).width() <= 768 ) {
+		 		var FeaturesSlider = new Swiper( '#features-2', {
+		 			slidesPerView: 1,
+		 			spaceBetween: 5,
+
+					wrapperClass: 'features-wrapper',
+					slideClass: 'features-slide',
+					pagination: {
+						el: '#features-2+.swiper-pagination',
+						clickable: true,
+					},
+
+		 		} )
+			}
+			/*
+	 	   * 07 OFFICE IMAGES SLIDER (ONLY MOBILE)
+	 		 */
+			if( $(window).width() <= 768 ) {
+		 		var FeaturesSlider = new Swiper( '#office', {
+		 			slidesPerView: 1,
+		 			spaceBetween: 5,
+
+					wrapperClass: 'office-wrapper',
+					slideClass: 'office-item',
+					pagination: {
+						el: '#office+.swiper-pagination',
+						clickable: true,
+					},
+
+		 		} )
+			}
 });

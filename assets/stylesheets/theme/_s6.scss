@@ -49,5 +49,8 @@
 			padding-bottom: 15px;
 			clear: both;
 		}
+		@media all and (max-width: 768px) {
+			padding: 0 15px;
+		}
 	}
 }

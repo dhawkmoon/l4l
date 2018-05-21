@@ -10,6 +10,10 @@
 			li {
 				float: none;
 				display: inline-block;
+				@media all and (max-width: 768px) {
+					display: block;
+					float: left;
+				}
 			}
 		}
 	}
@@ -30,5 +34,11 @@
 		@media all and (max-width: 1200px) {
 			left: 622px;
 		}
+	}
+}
+
+@media all and (max-width: 768px) {
+	#features-2 {
+		overflow: hidden;
 	}
 }

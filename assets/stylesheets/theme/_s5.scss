@@ -4,6 +4,9 @@
 	background-image: url(../img/s1-bg.png);
 	background-repeat: no-repeat;
 	background-position: 400px 200px;
+	@media all and (max-width: 768px) {
+		overflow: hidden;
+	}
 	h2 {
 		color: white;
 	}
@@ -12,10 +15,19 @@
 		color: white;
 		padding-left: 65px;
 		margin-top: 40px;
+		@media all and (max-width: 768px) {
+			padding-left: 0;
+			font-size: 16px;
+			margin-top: -15px;
+		}
 	}
 	.btn {
 		margin-left: 65px;
 		margin-top: 15px;
+		@media all and (max-width: 768px) {
+			margin-left: 0;
+			margin-top: 0;
+		}
 	}
 	.container {
 		position: relative;
@@ -31,6 +43,10 @@
 		position: relative;
 		margin-bottom: 25px;
 		padding-left: 65px;
+		@media all and (max-width: 768px) {
+			font-size: 16px;
+			width: 270px;
+		}
 		&::before {
 			content: '\e90f';
 			font-family: 'icomoon';
@@ -40,6 +56,9 @@
 			left: 0;
 			top: -11px;
 			@include font-smooth;
+			@media all and (max-width: 768px) {
+				top: -3px;
+			}
 		}
 	}
 }
@@ -54,6 +73,20 @@
 	background-repeat: no-repeat;
 	background-image: url(../img/s5-bg-women.png);
 	@media all and (max-width: 1200px) {
-		right: -165px;	
+		right: -165px;
+	}
+	@media all and (max-width: 768px) {
+		right: -120px;
+		width: 320px;
+		height: 300px;
+		bottom: -70px;
+		z-index: 1;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.list-wrapper {
+		position: relative;
+		z-index: 2;
 	}
 }

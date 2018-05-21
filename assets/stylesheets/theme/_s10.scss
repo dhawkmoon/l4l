@@ -9,3 +9,21 @@
 		margin-bottom: 30px;
 	}
 }
+
+@media all and (max-width: 768px) {
+	.office {
+		overflow: hidden;
+		&-wrapper {
+			width: 600vw;
+			margin-left: 0;
+			margin-right: 0;
+		}
+		&-item {
+			float: left;
+			padding: 0;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}

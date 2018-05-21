@@ -10,13 +10,26 @@
 	background-color: $brand-primary;
 	font-size: 14px;
 	color: white;
-
+	@media all and (max-width: 768px) {
+		height: 88px;
+    background-image: url(../img/s1-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position-y: -30px;
+    background-position-x: 55px;
+	}
 	&__left-col {
 		height: 70px;
 		text-align: left;
 		padding-top: 27px;
 		@extend %brand-back;
 		background-position-x: 10px;
+		@media all and (max-width: 768px) {
+			text-align: center;
+			height: auto;
+			background: none;
+			padding-top: 17px;
+		}
 	}
 	&__right-col {
 		height: 70px;
@@ -24,6 +37,13 @@
 		padding-top: 27px;
 		@extend %brand-back;
 		background-position-x: 255px;
+		@media all and (max-width: 768px) {
+			text-align: center;
+			height: auto;
+			background: none;
+
+			padding-top: 15px;
+		}
 	}
 	a {
 		color: white;
