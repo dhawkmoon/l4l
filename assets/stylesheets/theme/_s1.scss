@@ -37,6 +37,9 @@
 		 *{color: white}
 		 small {
 			 font-size: 69%;
+			 @media all and (max-width: 768px) {
+				 font-size: 60%;
+			 }
 		 }
 		 &::before {
 			 	content: '';

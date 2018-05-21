@@ -6173,7 +6173,8 @@ header {
     @media all and (max-width: 768px) {
       header .header-phone {
         margin-top: 22px;
-        font-size: 14px; } }
+        font-size: 14px;
+        white-space: nowrap; } }
 
 .logo {
   display: inline-block;
@@ -6250,6 +6251,9 @@ header {
       color: white; }
     .s1 .intro-heading small {
       font-size: 69%; }
+      @media all and (max-width: 768px) {
+        .s1 .intro-heading small {
+          font-size: 60%; } }
     .s1 .intro-heading::before {
       content: '';
       display: block;
@@ -6804,6 +6808,8 @@ header {
   background-position: 400px 200px; }
   @media all and (max-width: 768px) {
     .s5 {
+      background-position: center;
+      background-size: 120%;
       overflow: hidden; } }
   .s5 h2 {
     color: white; }
@@ -6815,15 +6821,16 @@ header {
     @media all and (max-width: 768px) {
       .s5 p {
         padding-left: 0;
-        font-size: 16px;
-        margin-top: -15px; } }
+        font-size: 14px;
+        margin-top: 10px;
+        margin-left: -15px; } }
   .s5 .btn {
     margin-left: 65px;
     margin-top: 15px; }
     @media all and (max-width: 768px) {
       .s5 .btn {
-        margin-left: 0;
-        margin-top: 0; } }
+        margin-left: -15px;
+        margin-top: 5px; } }
   .s5 .container {
     position: relative;
     height: 490px; }
@@ -6838,7 +6845,8 @@ header {
     @media all and (max-width: 768px) {
       .list-checked li {
         font-size: 16px;
-        width: 270px; } }
+        padding-left: 45px;
+        left: -15px; } }
     .list-checked li::before {
       content: '\e90f';
       font-family: 'icomoon';
@@ -7064,10 +7072,11 @@ header {
         left: calc( (100vw - 970px) / 2); } }
     @media all and (max-width: 768px) {
       .map-holder .address-block {
-        top: 350px;
+        top: 352px;
         left: 0;
         width: 100%;
-        bottom: 0; } }
+        bottom: 0;
+        background-color: white; } }
     .map-holder .address-block li {
       position: relative;
       display: block;
@@ -7218,5 +7227,13 @@ header {
     margin-bottom: 11px; }
 
 @media all and (max-width: 768px) {
+  html,
+  body {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; }
   h2 {
     font-size: 30px; } }

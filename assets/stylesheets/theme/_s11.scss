@@ -15,10 +15,11 @@
 			left: calc( (100vw - 970px) / 2 );
 		}
 		@media all and (max-width: 768px) {
-			top: 350px;
+			top: 352px;
 	    left: 0;
 	    width: 100%;
 	    bottom: 0;
+			background-color: white;
 		}
 		li {
 			position: relative;
