@@ -7028,8 +7028,9 @@ header {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.office .row {
-  margin-bottom: 30px; }
+.office-item {
+  margin-bottom: 30px;
+  height: 150px; }
 
 @media all and (max-width: 768px) {
   .office {
@@ -7039,6 +7040,7 @@ header {
       margin-left: 0;
       margin-right: 0; }
     .office-item {
+      height: auto;
       float: left;
       padding: 0; }
       .office-item img {
