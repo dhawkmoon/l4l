@@ -1,5 +1,39 @@
 .mobile-menu {
-
+	display: none !important;
+	position: absolute;
+	z-index: 9;
+	background-color: $brand-primary;
+	top: 103px;
+	height: 330px;
+	left: 0;
+	width: 100%;
+	background-image: url(../img/s1-bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 120%;
+	-webkit-animation-name: fadeIn;
+	        animation-name: fadeIn;
+	-webkit-animation-duration: .1s;
+	        animation-duration: .1s;
+	-webkit-animation-timing-function: ease-in;
+	        animation-timing-function: ease-in;
+	&.active {
+		display: block !important;
+	}
+	&-overlay {
+		height: calc(100vh - 433px );
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+    width: 100%;
+	}
+	p {
+		color: white;
+		font-size: 16px;
+		text-align: center;
+		padding-top: 15px;
+	}
 	&-toggler {
 		display: block;
 		margin-top: 20px;
@@ -10,5 +44,18 @@
 			margin-bottom: 11px;
 		}
 	}
+	li {
+		display: block !important;
+		text-align: center;
+		margin-bottom: 15px;
+		a {
+			font-size: 20px;
+		}
+	}
+	.header-nav {
+		margin-top: 40px;
+		display: block;
+	}
+
 
 }

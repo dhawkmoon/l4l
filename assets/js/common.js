@@ -7,7 +7,7 @@ $(document).ready( function(){
 	 */
 			$( '.header-nav a' ).on( 'click', function(e){
 				e.preventDefault();
-
+				$('.mobile-menu').removeClass('active')
 				var target = $(this).attr('href')
 				var to = $( target ).offset().top
 
@@ -42,6 +42,11 @@ $(document).ready( function(){
 			 }
 		 } );
 	 } )
+
+	 //Mobile menu toggler
+	 $('.mobile-menu-toggler,.mobile-menu-overlay').click(function(e){
+		 $('.mobile-menu').toggleClass( 'active' )
+	 });
 
 	//Features icons tabs
 	$('[data-toggle=tabs]').click(function(e){
