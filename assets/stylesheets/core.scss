@@ -7,9 +7,11 @@
 //Mixins
 @import 'mixins/_basic';
 @import 'mixins/_aligns';
+@import 'mixins/_animations';
 //Theme
 @import 'theme/_separators';
 @import 'theme/_btns';
+@import 'theme/_modals';
 @import 'theme/_forms';
 @import 'theme/common';
 @import 'theme/_header';

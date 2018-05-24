@@ -23,7 +23,7 @@
 						<span class="mobile-menu-toggler__bar"></span>
 					</span>
 				</div>
-				<div class="col-xs-4">
+				<div class="col-xs-4 col-sm-3 col-md-4">
 					<a href="/" class="logo logo-w"></a>
 				</div>
 				<div class="col-xs-6 res-pad-l hidden-xs">
@@ -46,7 +46,7 @@
 					 </nav>
 					 <!-- END: HEADER NAV -->
 				</div>
-				<div class="col-xs-4 col-md-2 col-lg-2 text-right">
+				<div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 text-right">
 					<a class="header-phone" href="+84812268323">(4812) 26-83-23</a>
 				</div>
 			</div>
@@ -107,26 +107,28 @@
 		<div class="separator separator-primary"></div>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-7 intro-form">
+				<div class="col-xs-12 col-sm-10 col-md-7 intro-form">
 					<p>Просто оставьте свой номер и мы Вам перезвоним</p>
 					<!-- START: INTRO FORM -->
 					<form action="/" class="s1-form form-inline" id="s1-form">
 						<div class="form-group">
 							<label for="phone-top" class="sr-only">Ваш телефон</label>
-							<input id="phone-top" name="phone-top" type="text" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" data-field="phone" maxlength="18" class="form-control" placeholder="+7 (">
-							<button id="btn_1" class="btn btn-success">
-								<span>Получить работу</span>
-								<!-- START: PRELOADER -->
-								<div class="spinner">
-									<div class="bounce1"></div>
-									<div class="bounce2"></div>
-									<div class="bounce3"></div>
-								</div>
-								<!-- END: PRELOADER -->
-							</button>
+							<input id="phone-top" name="phone-top" type="text"  maxlength="18" class="form-control" placeholder="+7 (" data-type="phone" data-mask="phone">
+							<span class="form-error"></span>
+
 						</div>
-						<span class="form-disclaimer">
-							Внимание! Нажимая «Получить работу» Вы подтверждаете свое согласие<br class="hidden-xs" />
+						<button id="btn_1" class="btn btn-success">
+							<span>Получить работу</span>
+							<!-- START: PRELOADER -->
+							<span class="spinner">
+								<span class="bounce1"></span>
+								<span class="bounce2"></span>
+								<span class="bounce3"></span>
+							</span>
+							<!-- END: PRELOADER -->
+						</button>
+						<span class="form-disclaimer col-sm-7 col-md-12">
+							Внимание! Нажимая «Получить работу» Вы подтверждаете свое согласие<br class="hidden-xs hidden-sm" />
 на использование Ваших персональных данных
 						</span>
 					</form>
@@ -444,7 +446,7 @@
 							<div class="question-item__body">
 								<span class="question-item__circle question-item__circle--muted"><i class="icon-call"></i></span>
 								Проще всего Вы можете записаться на собеседование, позвонив нам по номеру т. <a href="+74812268323">26-83-23</a>. Также Вы можете записаться на собеседование прямо на сайте: просто оставьте нам номер телефона и мы Вам перезвоним.<br /><br />
-								<span class="btn btn-success">Записаться на собеседование</span>
+								<span data-toggle="modal" data-target="#modal-2" class="btn btn-success">Записаться на собеседование</span>
 							</div>
 						</div>
 						<!-- END: QUESTION-ITEM -->
@@ -496,7 +498,7 @@
 					<li>У Вас нет опыта и Вы <br class="visible-xs" />хотите его приобрести!</li>
 				</ul>
 				<p>Вы увидели себя в этих пунтках?</p>
-				<button class="btn btn-secondary">На собеседование <i class="icon-arrow"></i></button>
+				<button data-toggle="modal" data-target="#modal-2" class="btn btn-secondary">На собеседование <i class="icon-arrow"></i></button>
 			</div>
 			<div class="s5-bg-women"></div>
 		</div>
@@ -904,6 +906,39 @@
 	<!-- START: ARROW TOP -->
 	<div class="arrow-top" id="arrow-top" style="display:none;"></div>
 	<!--END: ARROW TOP -->
+	<!-- MODAL 1 -->
+	<div class="m-modal" id="modal-2">
+		<div class="m-modal-wrapper">
+			<span class="m-modal__closer" data-toggle="modal" data-target="#modal-2">&times;</span>
+			<div class="m-modal-inner">
+				<h2>
+					<strong class="color-primary">Записаться</strong> на <strong class="color-primary">собеседование</strong>
+				</h2>
+				<p class="text-center">Оставьте номер своего телефона и наши специалисты перезвонят Вам</p>
+				<!-- START: MODAL 2 FORM -->
+				<form id="modal-form" class="modal-form">
+
+					<span class="form-group">
+						<label for="modal-phone" class="sr-only">Ваш телефон</label>
+						<input class="form-control" data-mask="phone" id="modal-phone" name="modal-phone" type="text" data-type="phone">
+						<span class="error-text"></span>
+					</span>
+					<button class="btn btn-success">
+						<span>Оценить сейчас</span>
+						<!-- START PRELOADER -->
+						<div class="spinner">
+							<div class="bounce1"></div>
+							<div class="bounce2"></div>
+							<div class="bounce3"></div>
+						</div>
+						<!-- END PRELOADER -->
+					</button>
+
+				</form>
+				<!-- END: MODAL 2 FORM -->
+			</div>
+		</div>
+	</div>
 </div>
 <!-- END: WRAPPER -->
 <!-- <script
@@ -912,6 +947,10 @@
   crossorigin="anonymous"></script> -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/swiper.min.js"></script>
+	<script src="assets/js/cleave.min.js"></script>
+	<script src="assets/js/modals.js"></script>
+	<script src="assets/js/validate-us.min.js"></script>
 	<script src="assets/js/common.js"></script>
+	<script src="assets/js/forms.js"></script>
 </body>
 </html>

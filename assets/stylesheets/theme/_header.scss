@@ -3,8 +3,10 @@ header {
 	background-color: $brand-primary;
 	border-bottom: 1px solid #9cc94e;
 	padding-top: 20px;
+	overflow: hidden;
 	@media all and (max-width: 768px) {
 		height: 103px;
+		overflow: visible;
 	}
 	.header-nav {
 		display: inline-block;
@@ -27,6 +29,10 @@ header {
 			}
 			@media all and (max-width: 1200px) {
 				font-size: 16px;
+			}
+			@media all and (max-width: 992px) {
+				font-size: 14px;
+				padding: 5px 15px;
 			}
 		}
 
@@ -90,7 +96,7 @@ header {
 				font-size: 12px;
 				width: 150px;
 			}
-			@media all and (max-width: 768px) {
+			@media all and (max-width: 992px) {
 				display: none;
 			}
 		}

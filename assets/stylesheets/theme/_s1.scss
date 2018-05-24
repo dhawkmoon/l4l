@@ -53,6 +53,9 @@
 		    left: -100vw;
 		    border-radius: 60px;
 				@media all and (max-width: 768px) {
+					height: 105px;
+				}
+				@media all and (max-width: 768px) {
 					top: -12px;
 				}
 		 }
@@ -110,6 +113,10 @@
 	}
 	.intro-form {
 		padding-top: 30px;
+		form {
+			position: relative;
+			z-index: 10;
+		}
 		.btn {
 			margin-left: 15px;
 		}

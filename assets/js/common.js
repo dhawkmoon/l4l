@@ -202,4 +202,27 @@ $(document).ready( function(){
 
 		 		} )
 			}
+
+			/*
+			 * Masks
+			 *
+			 * 01 Phones
+			 *
+			 */
+			 var phoneCleaves = []
+			 var phones = $( '[data-mask="phone"]' )
+			 for( var i=0; i<phones.length; i++ ) {
+				 phoneCleaves[i] = new Cleave( phones[i], {
+					 prefix: '+7 ',
+					 blocks: [3, 3, 3, 2, 2],
+					 delimiters: ['(', ') ', '-', '-'],
+					 numericOnly: true
+				 } );
+			 }
+
+
+			 //Fix if somebody inputs 8 in the place of +7
+			 $( '[data-type="phone"]' ).on( 'keypress', function(e){
+				 $(this).val( $(this).val().replace( /^\+7 \(8/, '+7 (' ) );
+			 } )
 });
