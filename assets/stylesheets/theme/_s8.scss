@@ -17,10 +17,18 @@
 			}
 		}
 	}
+	@media all and (max-width: 992px) and (min-width: 769px) {
+		.features-slide {
+			margin-right: 60px !important;
+		}
+	}
 	#tab5::before {
 		left: 195px;
 		@media all and (max-width: 1200px) {
 			left: 167px;
+		}
+		@media all and (max-width: 992px) {
+			left: 65px;
 		}
 	}
 	#tab6::before {
@@ -28,11 +36,17 @@
 		@media all and (max-width: 1200px) {
 			left: 394px;
 		}
+		@media all and (max-width: 992px) {
+			left: 275px;
+		}
 	}
 	#tab7::before {
 		left: 760px;
 		@media all and (max-width: 1200px) {
 			left: 622px;
+		}
+		@media all and (max-width: 992px) {
+			left: 482px;
 		}
 	}
 }

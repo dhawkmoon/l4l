@@ -22,6 +22,9 @@
 				@media all and (max-width: 1200px) {
 					margin-right: 75px;
 				}
+				@media all and (max-width: 992px) {
+					margin-right: 10px;
+				}
 				@media all and (max-width: 768px) {
 					margin-right: 0;
 				}
@@ -42,7 +45,7 @@
 					@media all and (max-width: 1200px) {
 						width: 60px;
 					}
-					@media all and (max-width: 768px) {
+					@media all and (max-width: 992px) {
 						display: none;
 					}
 				}
@@ -174,11 +177,15 @@
 		@media all and (max-width: 1200px) {
 			left: 60px;
 		}
+
 	}
 	&#tab2::before {
 		left: 340px;
 		@media all and (max-width: 1200px) {
 			left: 283px;
+		}
+		@media all and (max-width: 992px) {
+			left: 220px;
 		}
 	}
 	&#tab3::before {
@@ -186,12 +193,21 @@
 		@media all and (max-width: 1200px) {
 			left: 506px;
 		}
+		@media all and (max-width: 992px) {
+			left: 375px;
+		}
 	}
 	&#tab4::before {
 		left: 890px;
 		@media all and (max-width: 1200px) {
 			left: 725px;
 		}
+		@media all and (max-width: 992px) {
+			left: 530px;
+		}
+	}
+	@media all and (max-width: 992px) {
+		font-size: 16px;
 	}
 	@media all and (max-width: 768px) {
 		height: 275px;

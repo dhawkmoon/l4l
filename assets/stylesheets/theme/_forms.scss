@@ -28,3 +28,59 @@
 		display: block;
 	}
 }
+
+.modal-form,
+.s12-form {
+	position: relative;
+}
+
+.s12-form {
+	.form-error {
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
+	}
+}
+
+form {
+	.btn {
+		position: relative;
+	}
+	&.loading {
+		.btn {
+			opacity: 1 !important;
+			background-color: #27b18f !important;
+			&>span:first-child {
+				color: transparent;
+			}
+			.spinner {
+				display: block;
+			}
+		}
+	}
+}
+
+.message {
+
+		background-color: rgba(255, 255, 255, 0.9);
+		display: inline-block;
+		padding: 7px 15px;
+		color: black !important;
+		&-success::before {
+			content: '\e90f';
+			font-family: 'icomoon';
+			margin-right: 15px;
+			color: $brand-success;
+			font-size: 32px;
+			vertical-align: middle;
+		}
+		&-error::before {
+			content: '\e907';
+			font-family: 'icomoon';
+			margin-right: 15px;
+			color: $brand-danger;
+			font-size: 32px;
+			vertical-align: middle;
+		}
+
+}

@@ -8,6 +8,9 @@
 	&-item {
 		margin-bottom: 30px;
 		height: 250px;
+		@media all and (max-width: 992px) {
+			height: 150px;
+		}
 	}
 }
 

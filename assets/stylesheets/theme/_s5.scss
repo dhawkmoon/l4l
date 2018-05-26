@@ -17,6 +17,9 @@
 		color: white;
 		padding-left: 65px;
 		margin-top: 40px;
+		@media all and (max-width: 992px) and (min-width: 769px) {
+			display: none;
+		}
 		@media all and (max-width: 768px) {
 			padding-left: 0;
 			font-size: 14px;
@@ -27,6 +30,9 @@
 	.btn {
 		margin-left: 65px;
 		margin-top: 15px;
+		@media all and (max-width: 992px) {
+			margin-top: 5px;
+		}
 		@media all and (max-width: 768px) {
 			margin-left: -15px;
 			margin-top: 5px;
@@ -78,6 +84,9 @@
 	background-image: url(../img/s5-bg-women.png);
 	@media all and (max-width: 1200px) {
 		right: -165px;
+	}
+	@media all and (max-width: 992px) {
+		right: -265px;
 	}
 	@media all and (max-width: 768px) {
 		right: -120px;

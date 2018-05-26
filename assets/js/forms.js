@@ -33,6 +33,13 @@
 			id: 's1-form',
 			fields: {
 				'phone-top': phone,
+			},
+			onFormSuccess: function( f )
+			{
+				startLoading( $(f) )
+				setTimeout( function(){
+					printSuccess( $(f), 'Ваше сообщение получено! Мы Вам перезвоним.' )
+				}, 1000 )
 			}
 		},
 		{
@@ -40,7 +47,13 @@
 			fields: {
 				'modal-phone': phone,
 			}
-		}
+		},
+		{
+			id: 'prefooter-form',
+			fields: {
+				'phone-bottom': phone,
+			}
+		},
 	]
 
 	/*
@@ -84,4 +97,19 @@
 			 alert('Form is valid')
 		 }
 
-		validateUs( forms )
+		 function startLoading( $form )
+		 {
+			 $form.addClass('loading');
+			 $form.find('button').prop( 'disabled', true )
+		 }
+
+		 function printSuccess( $f, t )
+		 {
+			 $f.html( '<span class="message message-success">'+t+'</span>' )
+		 }
+		 function printError( $f, t )
+		 {
+			 $f.html( '<span class="message message-error">'+t+'</span>' )
+		 }
+
+		 validateUs( forms )

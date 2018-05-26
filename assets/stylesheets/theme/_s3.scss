@@ -94,9 +94,11 @@
 		}
 	}
 	&__body {
+		position: relative;
 		text-align: left;
 		display: block;
 		font-size: 18px;
+		z-index: 20;
 		@media all and (max-width: 1200px) {
 			font-size: 16px;
 		}
@@ -106,6 +108,10 @@
 		&.active {
 			display: block;
 		}
+	}
+	@media all and (max-width:992px) {
+		width: 50%;
+		margin-right: 0;
 	}
 	@media all and (max-width:768px) {
 		width: 100%;
