@@ -37,9 +37,8 @@
 			onFormSuccess: function( f )
 			{
 				startLoading( $(f) )
-				setTimeout( function(){
-					printSuccess( $(f), 'Ваше сообщение получено! Мы Вам перезвоним.' )
-				}, 1000 )
+				send( $(f) )
+
 			}
 		},
 		{
@@ -107,9 +106,29 @@
 		 {
 			 $f.html( '<span class="message message-success">'+t+'</span>' )
 		 }
+
 		 function printError( $f, t )
 		 {
 			 $f.html( '<span class="message message-error">'+t+'</span>' )
+		 }
+
+		 function send( $form )
+		 {
+			 var data = $form.serialize()
+			 $.ajax({
+					url: '/backend/send',
+					type: 'POST',
+					data: data,
+					context: $form,
+					success: function( response ) {
+						//printSuccess( $(this), response )
+						setTimeout( printSuccess, 1000, $(this), response )
+					},
+					error: function( response ) {
+						console.log(response)
+						setTimeout( printError, 1000, $(this), response.responseText )
+					},
+				})
 		 }
 
 		 validateUs( forms )
