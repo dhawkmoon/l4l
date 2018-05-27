@@ -6596,7 +6596,7 @@ header {
           height: 105px; } }
       @media all and (max-width: 768px) {
         .s1 .intro-heading::before {
-          top: -12px; } }
+          top: -2px; } }
   .s1 .intro-features {
     padding-left: 65px;
     margin-top: 70px; }
@@ -6674,7 +6674,11 @@ header {
       background-size: 450px;
       background-position: center 245px; }
       .s1 h2 {
-        font-size: 28px; } }
+        font-size: 28px; }
+      .s1 .form-group {
+        margin-bottom: 0; }
+      .s1 .form-disclaimer {
+        margin-top: 12px !important; } }
 
 .s2 {
   position: relative;
