@@ -2,3 +2,5 @@
 !/node_modules/bootstrap-sass
 /src/
 /backend/vendor/
+.ftpconfig
+szhiguti.beget.tech
