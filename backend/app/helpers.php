@@ -32,3 +32,15 @@
     }
     return false;
   }
+
+	/*
+	 * Get order number
+	 */
+
+	 function getOrderNumber()
+	 {
+    	$current = (int)file_get_contents( dirname( __FILE__ ) . '/order.txt' );
+			$current++;
+			file_put_contents( dirname( __FILE__ ) . '/order.txt', $current );
+			return $current;
+	 }

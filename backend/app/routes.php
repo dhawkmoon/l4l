@@ -20,8 +20,18 @@
 
 				if( count( $fields ) > 0 ) {
 
+					$data = [
+						'phone' 	=> 	$fields['phone'],
+						'number' 	=> 	getOrderNumber(),
+						'date'		=>  date( 'd-m-Y' ),
+						'time'		=>  date( 'H:i:s' ),
+						'form'		=>  $_POST['form'],
+						'url'			=>  preg_replace( '/\-_\-/', '&', $_POST['url'] ),
+					];
+
 					$tmpl = TemplateService::load( 'mails/phone.tpl' );
-					$tmpl = TemplateService::replace( $tmpl, ['phone' => $fields['phone'] ] );
+
+					$tmpl = TemplateService::replace( $tmpl, $data );
 
 					$mail = MailService::createMail( BASIC_FROM, BASIC_TO, BASIC_SUBJECT, $tmpl );
 					//echo $m

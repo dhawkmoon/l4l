@@ -34,12 +34,6 @@
 			fields: {
 				'phone-top': phone,
 			},
-			onFormSuccess: function( f )
-			{
-				startLoading( $(f) )
-				send( $(f) )
-
-			}
 		},
 		{
 			id: 'modal-form',
@@ -93,28 +87,46 @@
 		 */
 
 		 var onFormSuccess = function( f ) {
-			 alert('Form is valid')
+			 startLoading( $(f) )
+			 send( $(f) )
 		 }
 
+		 /*
+		  * Helpers
+			*
+			* 01 startLoading
+			*
+			* Start loading the form. Adds specific classes
+			*
+			*/
 		 function startLoading( $form )
 		 {
 			 $form.addClass('loading');
 			 $form.find('button').prop( 'disabled', true )
 		 }
-
+		 /*
+		  * 02 Prints mesaage to user on onSuccess
+			*/
 		 function printSuccess( $f, t )
 		 {
 			 $f.html( '<span class="message message-success">'+t+'</span>' )
 		 }
-
+		 /*
+		  * 03 Prints mesaage to user on onError
+		  */
 		 function printError( $f, t )
 		 {
 			 $f.html( '<span class="message message-error">'+t+'</span>' )
 		 }
-
+		 /*
+		  * 04 Sends data
+		  */
 		 function send( $form )
 		 {
 			 var data = $form.serialize()
+			 data += '&form='+$form.attr('id')
+			 data += '&url=' + window.location.search.replace( /&/g, '-_-' ) 
+			 console.log( data )
 			 $.ajax({
 					url: '/backend/send',
 					type: 'POST',
@@ -122,13 +134,13 @@
 					context: $form,
 					success: function( response ) {
 						//printSuccess( $(this), response )
-						setTimeout( printSuccess, 1000, $(this), response )
+						setTimeout( printSuccess, 2000, $(this), response )
 					},
 					error: function( response ) {
-						console.log(response)
-						setTimeout( printError, 1000, $(this), response.responseText )
+						//console.log(response)
+						setTimeout( printError, 2000, $(this), response.responseText )
 					},
 				})
 		 }
-
+		 //Let's rock
 		 validateUs( forms )
