@@ -31,6 +31,16 @@
 			left: 65px;
 		}
 	}
+	a[href="#tab5"] {
+		@media all and (max-width: 768px) {
+			width: 80% !important;
+		}
+	}
+	a[href="#tab6"] {
+		@media all and (max-width: 768px) {
+			width: 87% !important;
+		}
+	}
 	#tab6::before {
 		left: 480px;
 		@media all and (max-width: 1200px) {

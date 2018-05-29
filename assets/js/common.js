@@ -225,4 +225,15 @@ $(document).ready( function(){
 			 $( '[data-type="phone"]' ).on( 'keypress', function(e){
 				 $(this).val( $(this).val().replace( /^\+7 \(8/, '+7 (' ) );
 			 } )
+
+			 $('.s4 .btn-chevron').click( function(){
+				 $(this).toggleClass('active')
+				 $('.s4 .questions-wrapper').toggleClass('expanded')
+				 if( $(this).text() == 'Показать все вопросы' ) {
+					 $(this).text('Скрыть')
+				 }
+				 else {
+					 $(this).text( 'Показать все вопросы' )
+				 }
+			 } )
 });

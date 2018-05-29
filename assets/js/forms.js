@@ -125,8 +125,8 @@
 		 {
 			 var data = $form.serialize()
 			 data += '&form='+$form.attr('id')
-			 data += '&url=' + window.location.search.replace( /&/g, '-_-' ) 
-			 console.log( data )
+			 data += '&url=' + window.location.search.replace( /&/g, '-_-' )
+			 //console.log( data )
 			 $.ajax({
 					url: '/backend/send',
 					type: 'POST',
@@ -135,6 +135,12 @@
 					success: function( response ) {
 						//printSuccess( $(this), response )
 						setTimeout( printSuccess, 2000, $(this), response )
+						dataLayer.push({
+			 				'event' : 'formsend',
+			 				'eventCategory' : 'form',
+			 				'eventAction' : 'send-btn',
+			 				'eventLabel' : $(this).attr('id')
+		 				});
 					},
 					error: function( response ) {
 						//console.log(response)

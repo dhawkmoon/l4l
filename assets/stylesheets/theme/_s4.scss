@@ -1,5 +1,8 @@
 .s4 {
 	padding-bottom: 70px;
+	@media all and (max-width: 768px) {
+		padding-bottom: 35px;
+	}
 }
 .question-item {
 	&:not(:first-child) {
@@ -158,10 +161,49 @@
 				display: block;
 				max-width: 340px;
 				margin: 0 auto;
-				@media all and (max-width: 768px) {
-					font-size: 14px;
-				}
 			}
 		}
+	}
+}
+@media all and (max-width: 768px) {
+	.questions-wrapper {
+		padding-bottom: 35px;
+		.question-item {
+			display: none;
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3)
+			{
+				display: block;
+			}
+		}
+		&.expanded {
+			.question-item {
+				display: block;
+			}
+		}
+	}
+}
+
+.btn-chevron {
+	&::after {
+		content: '';
+		display: inline-block;
+		width: 21px;
+		height: 10px;
+		background-image: url(../img/chevron.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-left: 17px;
+		position: relative;
+		margin-top: -1px;
+		@include trans;
+		-webkit-transform: rotate(180deg);
+		        transform: rotate(180deg);
+
+	}
+	&.active::after{
+		-webkit-transform: rotate(0);
+						transform: rotate(0);
 	}
 }

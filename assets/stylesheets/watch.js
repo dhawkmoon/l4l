@@ -2,7 +2,7 @@ const fs = require('fs');
 const exec = require('child_process').exec;
 
 function render( filename ) {
-  const shell = exec('node-sass core.scss core.min.css');
+  const shell = exec('node-sass core.scss core.css');
   shell.stdout.on('data', function(data){
       console.log(data);
       // sendBackInfo();

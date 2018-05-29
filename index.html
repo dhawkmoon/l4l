@@ -8,8 +8,19 @@
 	<link rel="shortcut icon" href="assets/img/favicon.png">
 	<link rel="stylesheet" href="assets/stylesheets/swiper.min.css">
 	<link rel="stylesheet" href="assets/stylesheets/core.min.css">
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-MQXMFN6');</script>
+	<!-- End Google Tag Manager -->
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQXMFN6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <!-- START: WRAPPER -->
 <div class="wrapper">
 	<!-- START: HEADER -->
@@ -17,37 +28,37 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-4 visible-xs">
-					<span class="mobile-menu-toggler">
+					<span class="mobile-menu-toggler" id="mobile-menu-toggler">
 						<span class="mobile-menu-toggler__bar"></span>
 						<span class="mobile-menu-toggler__bar"></span>
 						<span class="mobile-menu-toggler__bar"></span>
 					</span>
 				</div>
 				<div class="col-xs-4 col-sm-3 col-md-4">
-					<a href="/" class="logo logo-w"></a>
+					<a href="/" class="logo logo-w" id="logo-link"></a>
 				</div>
 				<div class="col-xs-6 res-pad-l hidden-xs">
 					<!-- START: HEADER NAV -->
 					<nav class="header-nav">
 					 	<ul class="list-unstyled">
 					 		<li>
-					 			<a href="#s2">Почему мы?</a>
+					 			<a id="anchor-link-1" href="#s2">Почему мы?</a>
 					 		</li>
 							<li>
-					 			<a href="#s3">Вакансия</a>
+					 			<a id="anchor-link-2" href="#s3">Вакансия</a>
 					 		</li>
 							<li>
-					 			<a href="#s4">FAQ</a>
+					 			<a id="anchor-link-3" href="#s4">FAQ</a>
 					 		</li>
 							<li>
-					 			<a href="#s6">Отзывы</a>
+					 			<a id="anchor-link-4" href="#s6">Отзывы</a>
 					 		</li>
 					 	</ul>
 					 </nav>
 					 <!-- END: HEADER NAV -->
 				</div>
 				<div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 text-right">
-					<a class="header-phone" href="+84812268323">(4812) 26-83-23</a>
+					<a id="header-phone" class="header-phone" href="tel:+84812268323">(4812) 26-83-23</a>
 				</div>
 			</div>
 		</div>
@@ -57,21 +68,21 @@
 			<nav class="header-nav">
 				<ul class="list-unstyled">
 					<li>
-						<a href="#s2">Почему мы?</a>
+						<a id="mobile-anchor-link-1" href="#s2">Почему мы?</a>
 					</li>
 					<li>
-						<a href="#s3">Вакансия</a>
+						<a id="mobile-anchor-link-2" href="#s3">Вакансия</a>
 					</li>
 					<li>
-						<a href="#s4">FAQ</a>
+						<a id="mobile-anchor-link-3" href="#s4">FAQ</a>
 					</li>
 					<li>
-						<a href="#s6">Отзывы</a>
+						<a id="mobile-anchor-link-4" href="#s6">Отзывы</a>
 					</li>
 				</ul>
 			 </nav>
 			 <!-- END: HEADER NAV -->
-			 <div class="mobile-menu-overlay"></div>
+			 <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
 		</div>
 
 	</header>
@@ -159,7 +170,7 @@
 						<nav id="features" class="icons-tabs__header row">
 							<ul class="list-unstyled col-xs-12 features-wrapper">
 								<li class="features-slide">
-									<a href="#tab1" class="active" data-toggle="tabs">
+									<a id="tab-tpggler-1" href="#tab1" class="active" data-toggle="tabs">
 										<span class="tab-icon">
 											<i class="icon-time"></i>
 										</span>
@@ -172,7 +183,7 @@
 									</div>
 								</li>
 								<li class="features-slide">
-									<a href="#tab2" data-toggle="tabs">
+									<a id="tab-tpggler-2" href="#tab2" data-toggle="tabs">
 										<span class="tab-icon">
 											<i class="icon-block"></i>
 										</span>
@@ -185,7 +196,7 @@
 									</div>
 								</li>
 								<li class="features-slide">
-									<a href="#tab3" data-toggle="tabs">
+									<a id="tab-tpggler-3" href="#tab3" data-toggle="tabs">
 										<span class="tab-icon">
 											<i class="icon-costume"></i>
 										</span>
@@ -199,7 +210,7 @@
 									</div>
 								</li>
 								<li class="features-slide">
-									<a href="#tab4" data-toggle="tabs">
+									<a id="tab-tpggler-4" href="#tab4" data-toggle="tabs">
 										<span class="tab-icon">
 											<i class="icon-warm"></i>
 										</span>
@@ -252,10 +263,10 @@
 			<div class="row">
 				<div class="col-xs-12 text-center">
 					<h2>
-						<span data-target="#htab1" class="h-tabs-toggler active">
+						<span id="h-tab-tpggler-1" data-target="#htab1" class="h-tabs-toggler active">
 							Что <span>нужно</span> делать<span>?</span>
 						</span>
-						<span data-target="#htab2" class="h-tabs-toggler">
+						<span id="h-tab-tpggler-2" data-target="#htab2" class="h-tabs-toggler">
 							Что <span>от Вас</span> требуется<span>?</span>
 						</span>
 					</h2>
@@ -334,10 +345,11 @@
 			<!-- END: SECTION HEADING -->
 			<div class="row">
 				<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+					<!-- START: QUESTIONS-WRAPPER -->
 					<div class="questions-wrapper">
 
 						<!-- START: QUESTION-ITEM -->
-						<div class="question-item question-item--active">
+						<div id="question-item-1" class="question-item question-item--active">
 							<div class="question-item__header">
 								<span class="question-item__circle">?</span>
 								Какие графики работы у Вас в организации?
@@ -350,7 +362,7 @@
 						<!-- END: QUESTION-ITEM -->
 
 						<!-- START: QUESTION-ITEM -->
-						<div class="question-item">
+						<div id="question-item-2" class="question-item">
 							<div class="question-item__header">
 								<span class="question-item__circle">?</span>
 								Какой период занимает стажировка?
@@ -363,7 +375,7 @@
 						<!-- END: QUESTION-ITEM -->
 
 						<!-- START: QUESTION-ITEM -->
-						<div class="question-item">
+						<div id="question-item-3" class="question-item">
 							<div class="question-item__header">
 								<span class="question-item__circle">?</span>
 								Какое у Вас трудоустройство?
@@ -376,7 +388,7 @@
 						<!-- END: QUESTION-ITEM -->
 
 						<!-- START: QUESTION-ITEM -->
-						<div class="question-item">
+						<div id="question-item-4" class="question-item">
 							<div class="question-item__header">
 								<span class="question-item__circle">?</span>
 								Какая ЗП в Вашей организации?
@@ -389,20 +401,20 @@
 						<!-- END: QUESTION-ITEM -->
 
 						<!-- START: QUESTION-ITEM -->
-						<div class="question-item">
+						<div id="question-item-5" class="question-item">
 							<div class="question-item__header">
 								<span class="question-item__circle">?</span>
 								Как выплачивается ЗП в Вашей организации?
 							</div>
 							<div class="question-item__body">
 								<span class="question-item__circle question-item__circle--muted"><i class="icon-call"></i></span>
-								Выплата заработной платы производится в рамках зарплатного проекта от банка  Хоум Кркдит, 2 раза в месяц: за период с 1-15 и с 15 по окончание месяца.
+								Выплата заработной платы производится в рамках зарплатного проекта от банка  Хоум Кредит, 2 раза в месяц: за период с 1-15 и с 15 по окончание месяца.
 							</div>
 						</div>
 						<!-- END: QUESTION-ITEM -->
 
 						<!-- START: QUESTION-ITEM -->
-						<div class="question-item">
+						<div id="question-item-6" class="question-item">
 							<div class="question-item__header">
 								<span class="question-item__circle">?</span>
 								Какие проекты у вас в Контакт-центре?
@@ -414,7 +426,7 @@
 						</div>
 						<!-- END: QUESTION-ITEM -->
 						<!-- START: QUESTION-ITEM -->
-						<div class="question-item">
+						<div id="question-item-7" class="question-item">
 							<div class="question-item__header">
 								<span class="question-item__circle">?</span>
 									Проводит ли Ваша компания обучение и тренинги?
@@ -426,19 +438,19 @@
 						</div>
 						<!-- END: QUESTION-ITEM -->
 						<!-- START: QUESTION-ITEM -->
-						<div class="question-item">
+						<div id="question-item-8" class="question-item">
 							<div class="question-item__header">
 								<span class="question-item__circle">?</span>
 								Какие требования Вы выдвигаете к кандидатам?
 							</div>
 							<div class="question-item__body">
 								<span class="question-item__circle question-item__circle--muted"><i class="icon-call"></i></span>
-								Возрасные ограничения от 16-45, гражданство РФ, Знание ПК на уровне пользователя.
+								Возрастные ограничения от 16-45, гражданство РФ, Знание ПК на уровне пользователя.
 							</div>
 						</div>
 						<!-- END: QUESTION-ITEM -->
 						<!-- START: QUESTION-ITEM -->
-						<div class="question-item">
+						<div id="question-item-9" class="question-item">
 							<div class="question-item__header">
 								<span class="question-item__circle">?</span>
 								Как записаться к вам на собеседование?
@@ -446,12 +458,12 @@
 							<div class="question-item__body">
 								<span class="question-item__circle question-item__circle--muted"><i class="icon-call"></i></span>
 								Проще всего Вы можете записаться на собеседование, позвонив нам по номеру т. <a href="+74812268323">26-83-23</a>. Также Вы можете записаться на собеседование прямо на сайте: просто оставьте нам номер телефона и мы Вам перезвоним.<br /><br />
-								<span data-toggle="modal" data-target="#modal-2" class="btn btn-success">Записаться на собеседование</span>
+								<span data-toggle="modal" data-target="#modal-2" class="btn btn-success">Записаться <span class="hidden-xs">на собеседование</span></span>
 							</div>
 						</div>
 						<!-- END: QUESTION-ITEM -->
 						<!-- START: QUESTION-ITEM -->
-						<div class="question-item">
+						<div id="question-item-10" class="question-item">
 							<div class="question-item__header">
 								<span class="question-item__circle">?</span>
 								Что необходимо иметь при себе на собеседовании?
@@ -463,7 +475,7 @@
 						</div>
 						<!-- END: QUESTION-ITEM -->
 						<!-- START: QUESTION-ITEM -->
-						<div class="question-item">
+						<div id="question-item-11" class="question-item">
 							<div class="question-item__header">
 								<span class="question-item__circle">?</span>
 									Какие документы необходимо иметь при оформлении?
@@ -475,6 +487,10 @@
 						</div>
 						<!-- END: QUESTION-ITEM -->
 					</div>
+					<!-- END: QUESTIONS-WRAPPER -->
+				</div>
+				<div class="row visible-xs text-center">
+					<span id="mobile-questions-expander" class="btn btn-success btn-chevron">Показать все вопросы</span>
 				</div>
 			</div>
 		</div>
@@ -498,7 +514,7 @@
 					<li>У Вас нет опыта и Вы <br class="visible-xs" />хотите его приобрести!</li>
 				</ul>
 				<p>Вы увидели себя в этих пунктах?</p>
-				<button data-toggle="modal" data-target="#modal-2" class="btn btn-secondary">На собеседование <i class="icon-arrow"></i></button>
+				<button id="modal-btn-1" data-toggle="modal" data-target="#modal-2" class="btn btn-secondary">На собеседование <i class="icon-arrow"></i></button>
 			</div>
 			<div class="s5-bg-women"></div>
 		</div>
@@ -519,8 +535,8 @@
 				<div class="col-xs-12 col-sm-10 col-sm-offset-1">
 					<!-- START: TESTIMONIALS -->
 					<div class="testimonials">
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
+						<div id="testimonials-btn-next" class="swiper-button-next"></div>
+						<div id="testimonials-btn-prev" class="swiper-button-prev"></div>
 						<div class="swiper-container" id="testimonials">
 							<div class="swiper-wrapper">
 								<!-- START: TESTIMONIALS ITEM -->
@@ -661,7 +677,7 @@
 						<nav id="features-2" class="icons-tabs__header row">
 							<ul class="list-unstyled col-xs-12 features-wrapper">
 								<li class="features-slide">
-									<a href="#tab5" data-toggle="tabs" class="active">
+									<a id="tab-tpggler-5" href="#tab5" data-toggle="tabs" class="active">
 										<span class="tab-icon">
 											<i class="icon-thumb"></i>
 										</span>
@@ -674,7 +690,7 @@
 									</div>
 								</li>
 								<li class="features-slide">
-									<a href="#tab6" data-toggle="tabs">
+									<a id="tab-tpggler-6" href="#tab6" data-toggle="tabs">
 										<span class="tab-icon">
 											<i class="icon-chart"></i>
 										</span>
@@ -683,11 +699,11 @@
 										</span>
 									</a>
 									<div class="icons-tab visible-xs">
-										<p>Результативность является одним из критериев качества нашей работы. Осозновая это мы выстроили внутренние процессы компании по принципу управления метриками и показателями. Каждый сотрундник нашей компании имеет количественные оценки своей работы.</p>
+										<p>Результативность является одним из критериев качества нашей работы. Осознавая это мы выстроили внутренние процессы компании по принципу управления метриками и показателями.</p>
 									</div>
 								</li>
 								<li class="features-slide">
-									<a href="#tab7" data-toggle="tabs">
+									<a id="tab-tpggler-7" href="#tab7" data-toggle="tabs">
 										<span class="tab-icon">
 											<i class="icon-gib"></i>
 										</span>
@@ -696,7 +712,7 @@
 										</span>
 									</a>
 									<div class="icons-tab visible-xs">
-										<p>Мы стремимся быть гибкой компанией, выстраивая уникальные проекты для наших клиентов. Поэтмоу наша команда - это быстро обучаемые, гибкие и универсальные специалисты, готовые работать над проектами любой сложности.</p>
+										<p>Мы стремимся быть гибкой компанией, выстраивая уникальные проекты для наших клиентов. Поэтому наша команда - это быстро обучаемые, гибкие и универсальные специалисты, готовые работать над проектами любой сложности.</p>
 									</div>
 								</li>
 							</ul>
@@ -710,12 +726,12 @@
 							<!-- END: TAB 5 -->
 							<!-- START: TAB 6 -->
 							<div id="tab6" class="icons-tab">
-								<p>Результативность является одним из критериев качества нашей работы. Осозновая это мы выстроили внутренние процессы компании по принципу управления метриками и показателями. Каждый сотрундник нашей компании имеет количественные оценки своей работы.</p>
+								<p>Результативность является одним из критериев качества нашей работы. Осознавая это мы выстроили внутренние процессы компании по принципу управления метриками и показателями. </p>
 							</div>
 							<!-- END: TAB 6 -->
 							<!-- START: TAB 7 -->
 							<div id="tab7" class="icons-tab">
-								<p>Мы стремимся быть гибкой компанией, выстраивая уникальные проекты для наших клиентов. Поэтмоу наша команда - это быстро обучаемые, гибкие и универсальные специалисты, готовые работать над проектами любой сложности.</p>
+								<p>Мы стремимся быть гибкой компанией, выстраивая уникальные проекты для наших клиентов. Поэтому наша команда - это быстро обучаемые, гибкие и универсальные специалисты, готовые работать над проектами любой сложности.</p>
 							</div>
 							<!-- END: TAB 7 -->
 
@@ -743,8 +759,8 @@
 			<!-- START: CLIENTS -->
 			<div class="row clients">
 				<div class="col-xs-10 col-xs-offset-1">
-					<div class="swiper-button-prev hidden-xs" style="left:-50px;"></div>
-					<div class="swiper-button-next hidden-xs"></div>
+					<div id="clients-btn-prev" class="swiper-button-prev hidden-xs" style="left:-50px;"></div>
+					<div id="clients-btn-next" class="swiper-button-next hidden-xs"></div>
 					<div class="swiper-container" id="clients">
 						<div class="swiper-wrapper">
 							<!-- START: CLIENT -->
@@ -837,10 +853,10 @@
 			<div class="address-block">
 				<ul class="list-unstyled">
 					<li class="place">
-						<a href="#">г. Смоленск, ул. Попова, д. 112</a>
+						<a id="map-link-place" href="#">г. Смоленск, ул. Попова, д. 112</a>
 					</li>
 					<li class="phone">
-						<a href="tel:+74812268323">(4812) 26-83-23</a>
+						<a id="map-link-phone" href="tel:+74812268323">(4812) 26-83-23</a>
 					</li>
 				</ul>
 			</div>
@@ -869,7 +885,7 @@
 						<label for="phone-bottom" class="sr-only">Ваш телефон</label>
 						<input id="phone-bottom" name="phone-bottom" type="text" data-mask="phone" maxlength="18" class="form-control" placeholder="+7 (">
 						<span class="form-error"></span>
-						<button id="btn_1" class="btn btn-success">
+						<button id="btn_3" class="btn btn-success">
 							<span>Перезвонить мне</span>
 							<!-- START: PRELOADER -->
 							<span class="spinner">
@@ -898,7 +914,7 @@
 					© ООО «Лайф Колл», 2014-2018
 				</div>
 				<div class="col-xs-12 col-sm-6 footer__right-col">
-					<a href="#" rel="nofollow" target="_blank">Designed & Developed by <strong>Stylus</strong></a>
+					<a id="developers-link" href="https://www.behance.net/bionicateam6979" rel="nofollow" target="_blank">Designed & Developed by <strong>Stylus</strong></a>
 				</div>
 			</div>
 		</div>
@@ -924,7 +940,7 @@
 						<input class="form-control" data-mask="phone" id="modal-phone" name="modal-phone" type="text" data-type="phone">
 						<span class="form-error"></span>
 					</span>
-					<button class="btn btn-success">
+					<button id="btn_4" class="btn btn-success">
 						<span>Перезвонить мне</span>
 						<!-- START PRELOADER -->
 						<span class="spinner">
@@ -951,7 +967,7 @@
 	<script src="assets/js/cleave.min.js"></script>
 	<script src="assets/js/modals.js"></script>
 	<script src="assets/js/dist/validate-us.min.js"></script>
-	<script src="assets/js/dist/common.js"></script>
-	<script src="assets/js/dist/forms.js"></script>
+	<script src="assets/js/dist/common.min.js"></script>
+	<script src="assets/js/dist/forms.min.js"></script>
 </body>
 </html>
