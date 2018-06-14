@@ -52,6 +52,9 @@
 			&.phone::before {
 				content: '\e904';
 			}
+			&.vk::before {
+				content: url( ../img/vk.svg );
+			}
 			a {
 				color: black !important;
 				@include link-border;

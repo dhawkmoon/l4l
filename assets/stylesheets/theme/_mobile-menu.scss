@@ -42,6 +42,23 @@
 			width: 40px;
 			border-top: 1px solid white;
 			margin-bottom: 11px;
+			@include trans;
+			-webkit-transform-origin: left;
+			        -webkit-transform-origin: left;
+			                transform-origin: left;
+		}
+		&.active {
+			span:first-child {
+		    -webkit-transform: rotate(45deg) translateX(-4px) translateY(-2px);
+		            transform: rotate(45deg) translateX(-4px) translateY(-2px);
+			}
+			span:nth-child(2) {
+				opacity: 0;
+			}
+			span:last-child {
+				-webkit-transform: rotate(-45deg);
+				        transform: rotate(-45deg);
+			}
 		}
 	}
 	li {

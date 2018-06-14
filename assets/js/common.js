@@ -46,6 +46,7 @@ $(document).ready( function(){
 	 //Mobile menu toggler
 	 $('.mobile-menu-toggler,.mobile-menu-overlay').click(function(e){
 		 $('.mobile-menu').toggleClass( 'active' )
+		 $('.mobile-menu-toggler').toggleClass( 'active' )
 	 });
 
 	//Features icons tabs
