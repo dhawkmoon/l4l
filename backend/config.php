@@ -4,7 +4,14 @@
 
 	define( 'BASIC_FROM', 'info@line4life.ru' );
 
-	define( 'BASIC_TO', 'dhawkmoon@mail.ru' );
+	define( 'BASIC_TO',
+	[
+		'dhawkmoon@mail.ru' => 'Михаил',
+		'lihaletov.dm@gmail.com' => 'Дмитрий',
+		'bionicateam@gmail.com'  => 'Алексей',
+		'hawkguitar@gmail.com' => 'Михаил',
+	]
+	);
 
 	define( 'BASIC_SUBJECT', '++ [TEST] ++ Заказ обратного звонка' );
 
