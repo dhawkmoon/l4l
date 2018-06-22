@@ -19,10 +19,12 @@
         }
 
 				if( count( $fields ) > 0 ) {
-
+                    //let get current phone number
+                    $orderNumber = getOrderNumber();
+                    
 					$data = [
 						'phone' 	=> 	$fields['phone'],
-						'number' 	=> 	getOrderNumber(),
+						'number' 	=> 	$orderNumber,
 						'date'		=>  date( 'd-m-Y' ),
 						'time'		=>  date( 'H:i:s' ),
 						'form'		=>  $_POST['form'],
@@ -33,7 +35,9 @@
 
 					$tmpl = TemplateService::replace( $tmpl, $data );
 
-					$mail = MailService::createMail( BASIC_FROM, BASIC_TO, BASIC_SUBJECT, $tmpl );
+                    $emailSubject = getEmailSubject( $orderNumber );
+
+					$mail = MailService::createMail( BASIC_FROM, BASIC_TO, $emailSubject, $tmpl );
 					//echo $m
 					$mail->send();
 					return ['code' => 200, 'body' => 'Спасибо, Ваше сообщение успешно отправлено.'];

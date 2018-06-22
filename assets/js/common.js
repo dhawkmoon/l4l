@@ -1,3 +1,4 @@
+//Common js file
 $(document).ready( function(){
 	/*
 	 * Scrolls
@@ -210,17 +211,7 @@ $(document).ready( function(){
 			 * 01 Phones
 			 *
 			 */
-			 var phoneCleaves = []
-			 var phones = $( '[data-mask="phone"]' )
-			 for( var i=0; i<phones.length; i++ ) {
-				 phoneCleaves[i] = new Cleave( phones[i], {
-					 prefix: '+7 ',
-					 blocks: [3, 3, 3, 2, 2],
-					 delimiters: ['(', ') ', '-', '-'],
-					 numericOnly: true
-				 } );
-			 }
-
+			 $("[data-mask=phone]").mask("+7 (999) 999-99-99");
 
 			 //Fix if somebody inputs 8 in the place of +7
 			 $( '[data-type="phone"]' ).on( 'keypress', function(e){

@@ -44,3 +44,16 @@
 			file_put_contents( dirname( __FILE__ ) . '/order.txt', $current );
 			return $current;
 	 }
+
+
+    /*
+     * Get subject for mail on the base of config
+     */
+     
+    function getEmailSubject( $number )
+    {
+        if( CONCAT_NUMBER ) {
+            return '#' . $number . ' ' . BASIC_SUBJECT;
+        }
+        else return BASIC_SUBJECT;
+    }
