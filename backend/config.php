@@ -10,7 +10,8 @@
 	[
 	    's.zhigunov@line4life.ru' => 'Сергей',
 		'lihaletov.dm@gmail.com' => 'Дмитрий',
-		'e.safronova@line4life.ru' => 'Екатерина Сафронова',
+		'y.kopryanceva@line4life.ru' => 'y.kopryanceva',
+		't.filimonova@line4life.ru' => 't.filimonova',
 	]
 	);
     
