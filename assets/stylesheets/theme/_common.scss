@@ -142,3 +142,19 @@ section {
 		opacity: 1;
 	}
 }
+
+#map-link-place {
+	position: relative;
+    top: -11px;
+}
+
+.map-holder .address-block li.phone {
+	margin-top: -20px;
+	margin-bottom: 30px;
+}
+
+.heart {
+	font-family: sans-serif;
+	/* color: red; */
+	font-size: 12px;
+}

@@ -17,7 +17,7 @@ header {
 		a {
 			color: white;
 	    font-size: 20px;
-	    font-weight: 300;
+	    font-weight: 400;
 	    text-decoration: none !important;
 	    display: block;
 	    padding: 5px 25px;
@@ -82,7 +82,7 @@ header {
 	&-w {
 		background-image: url(../img/logo-w.svg);
 		&::after {
-			content: 'Работа в Контакт-центре Line4Life® Смоленск';
+			content: 'Работа в Контакт-центре Line4Life® Симферополь';
 			position: absolute;
 			display: block;
 			width: 200px;
@@ -91,7 +91,7 @@ header {
 			color: white;
 			font-size: 16px;
 			line-height: 1.2;
-			font-weight: 300;
+			font-weight: 500;
 			@media all and (max-width: 1200px) {
 				font-size: 12px;
 				width: 150px;
