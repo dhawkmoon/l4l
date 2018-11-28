@@ -129,7 +129,7 @@
 			 data += '&src=Симферополь'
 			 //console.log( data )
 			 $.ajax({
-					url: '/backend/send',
+					url: 'http://jobline4life.ru/backend/send',
 					type: 'POST',
 					data: data,
 					context: $form,
