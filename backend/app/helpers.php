@@ -49,11 +49,11 @@
     /*
      * Get subject for mail on the base of config
      */
-     
-    function getEmailSubject( $number )
+
+    function getEmailSubject( $number, $src='' )
     {
         if( CONCAT_NUMBER ) {
-            return '#' . $number . ' ' . BASIC_SUBJECT;
+            return '#' . $number . ' ' . BASIC_SUBJECT . ' | ' . $src;
         }
         else return BASIC_SUBJECT;
     }

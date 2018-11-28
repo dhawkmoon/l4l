@@ -126,6 +126,7 @@
 			 var data = $form.serialize()
 			 data += '&form='+$form.attr('id')
 			 data += '&url=' + window.location.search.replace( /&/g, '-_-' )
+			 data += '&src=Смоленск'
 			 //console.log( data )
 			 $.ajax({
 					url: '/backend/send',
