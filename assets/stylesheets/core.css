@@ -6593,6 +6593,9 @@ header {
       @media all and (max-width: 768px) {
         .s1 .intro-heading small {
           font-size: 60%; } }
+      @media all and (max-width: 375px) {
+        .s1 .intro-heading small {
+          font-size: 48%; } }
     .s1 .intro-heading::before {
       content: '';
       display: block;

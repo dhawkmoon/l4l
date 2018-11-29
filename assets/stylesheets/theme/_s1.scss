@@ -40,6 +40,9 @@
 			 @media all and (max-width: 768px) {
 				 font-size: 60%;
 			 }
+			 @media all and (max-width: 375px) {
+				 font-size: 48%;
+			 }
 		 }
 		 &::before {
 			 	content: '';
