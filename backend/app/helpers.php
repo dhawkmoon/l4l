@@ -39,9 +39,20 @@
 
 	 function getOrderNumber()
 	 {
-    	$current = (int)file_get_contents( dirname( __FILE__ ) . '/order.txt' );
+		 	if( isset($_POST['src']) && $_POST['src'] == 'Смоленск' ) {
+				$file = 'order';
+			}
+			elseif( isset($_POST['src']) && $_POST['src'] == 'Симферополь' ) {
+				$file = 'order_';
+			}
+			else {
+				$file = 'order';
+			}
+
+
+    	$current = (int)file_get_contents( dirname( __FILE__ ) . '/'.$file.'.txt' );
 			$current++;
-			file_put_contents( dirname( __FILE__ ) . '/order.txt', $current );
+			file_put_contents( dirname( __FILE__ ) . '/'.$file.'.txt', $current );
 			return $current;
 	 }
 
