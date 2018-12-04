@@ -38,7 +38,20 @@
 
         	$emailSubject = getEmailSubject( $orderNumber, $data['src'] );
 
-					$mail = MailService::createMail( BASIC_FROM, BASIC_TO, $emailSubject, $tmpl );
+					if( isset($_POST['src']) && $_POST['src'] == 'Смоленск' ) {
+
+						$mail = MailService::createMail( BASIC_FROM, BASIC_TO, $emailSubject, $tmpl );
+
+					}
+					elseif( isset($_POST['src']) && $_POST['src'] == 'Симферополь' ) {
+
+						$mail = MailService::createMail( BASIC_FROM, ALT_TO, $emailSubject, $tmpl );
+					}
+					else {
+						$mail = MailService::createMail( BASIC_FROM, BASIC_TO, $emailSubject, $tmpl );
+					}
+
+
 					//echo $m
 					$mail->send();
 					return ['code' => 200, 'body' => 'Спасибо, Ваше сообщение успешно отправлено.'];
